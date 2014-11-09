@@ -5,16 +5,16 @@ title: Welcome
 
 <section id="future" class="main-bg">
   <div class="panel left">
-    <img src="/images/logos/p-logo.svg">
+    <img src="/images/logos/a-logo.png">
     <summary>
-      <h1>Welcome to the future</h1>
-      <p>Web Components usher in a new era of web development based on encapsulated and interoperable custom elements that extend HTML itself. Built atop these new standards, Polymer makes it easier and faster to create anything from a button to a complete application across desktop, mobile, and beyond.</p>
-      <a href="/docs/start/getting-the-code.html">
+      <h1>Coding Biology</h1>
+      <p>Antha make it easy to rapidly compose biological work flows using individually testable and composable Antha Elements.</p>
+      <a href="/docs/start/introduction.html">
         <paper-button raised unresolved>
           <core-icon icon="archive"></core-icon> Get {{site.project_title}}
         </paper-button>
       </a>
-      <a href="https://github.com/polymer">
+      <a href="https://github.com/Synthace/antha">
         <paper-button class="github" unresolved>
           <core-icon icon="social:post-github"></core-icon> View on Github
         </paper-button>
@@ -80,15 +80,15 @@ title: Welcome
     <summary style="transform: translateZ(0);">
       <h1>Designer</h1>
       <a href="/tools/designer/" target="_blank">
-        <img src="/images/designer_fadeout.png" alt="Launch the designer tool" title="Launch the designer tool">
+        <img src="/images/flow-gui.png" alt="Launch the designer tool" title="Launch the designer tool">
       </a>
       <div>
         <p>
-        Designer is a drag and drop tool for prototyping apps using {{site.project_title}}. Save your experiments as Github gists.
+        Composer is a visual tool for wiring workflows using {{site.project_title}}. Rapidly define and execute your experiments.
         </p>
         <a href="/tools/designer/" target="_blank">
           <paper-button>
-            <core-icon icon="arrow-forward"></core-icon> Try it now
+            <core-icon icon="arrow-forward"></core-icon> Learn More
           </paper-button>
         </a>
       </div>
@@ -96,7 +96,6 @@ title: Welcome
   </div>
 </section>
 
-{% comment %}
 <section id="everything-element" class="main-purple">
   <div class="panel right">
     <summary>
@@ -111,56 +110,5 @@ title: Welcome
       </a>
     </summary>
     <img src="/images/logos/p-elements.svg">
-  </div>
-</section>
-{% endcomment %}
-
-<section id="apps">
-  <div class="panel">
-    <h1>Demos</h1>
-    <div class="columns" layout horizontal wrap>
-      <summary flex>
-        <div class="box">
-          <a href="/apps/topeka/">
-            <img src="/images/topeka_square.png">
-          </a>
-        </div>
-        <h2 class="elements-using">Topeka</h2>
-        <p>A fun quiz app built using material-design based <em>paper-elements</em></p>
-        <a href="/apps/topeka/">
-          <paper-button>
-            <core-icon icon="arrow-forward"></core-icon> Demo Topeka
-          </paper-button>
-        </a>
-      </summary>
-      <summary flex>
-        <div class="box">
-          <a href="/components/paper-elements/demo.html#core-toolbar">
-            <img src="/images/sampler-paper-square.png">
-          </a>
-        </div>
-        <h2 class="elements-creating">Paper Elements</h2>
-        <p>A sampler showcasing Polymer elements based on material design</p>
-        <a href="/components/paper-elements/demo.html#core-toolbar">
-          <paper-button>
-            <core-icon icon="arrow-forward"></core-icon> Browse Elements
-          </paper-button>
-        </a>
-      </summary>
-      <summary flex>
-        <div class="box">
-          <a href="/components/paper-calculator/demo.html">
-            <img src="/images/paper-calculator.png">
-          </a>
-        </div>
-        <h2 class="platform">Calculator</h2>
-        <p>A calculator app mockup highlighting material ink effects</p>
-        <a href="/components/paper-calculator/demo.html">
-          <paper-button>
-            <core-icon icon="arrow-forward"></core-icon> Demo Calculator
-          </paper-button>
-        </a>
-      </summary>
-    </div>
   </div>
 </section>

@@ -14,3 +14,12 @@ Software: Jekyll, App Engine
 
 
 Web Components are the bees knees.
+
+  
+ sward:
+  full_name: Sean Ward
+  gplus: 112350953878699453879
+  profile_pic: https://lh3.googleusercontent.com/-8NuJRKghqjQ/AAAAAAAAAAI/AAAAAAAAAAs/rmSvhElwPeE/s120-c/photo.jpg
+  web: http://www.synthace.com
+  twitter: synthace
+  github: seanward
