@@ -341,7 +341,6 @@ exports.recordSearch = function(term) {
 exports.recordPageview = function(opt_url) {
   var url = opt_url || location.pathname + location.hash;
   ga('send', 'pageview', url);
-  ga('devrelTracker.send', 'pageview', url);
 };
 
 // -------------------------------------------------------------------------- //
@@ -352,8 +351,8 @@ exports.recordPageview = function(opt_url) {
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-39334307-1', 'auto', {'siteSpeedSampleRate': 50});
-ga('create', 'UA-49880327-9', 'auto', {'name': 'devrelTracker'});
+ga('create', 'UA-25150006-2', 'auto');
+ga('require', 'displayfeatures')
 exports.recordPageview();
 // ---------------
 

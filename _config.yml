@@ -22,5 +22,10 @@ kramdown:
 # Site globals used throughout docs.
 project_title: Antha
 latest_version: 0.0.1
+polymer_version: 0.4.2
 add_permalinks: true # adds permalinks to heading tags.
-load_disqus: true
+load_disqus: false #need to decide on disqus
+
+# blurb text
+stock_description: "Antha is a high level language for describing biological protocols, workflows, and experiments. Antha also provides execution capabilities for both robots or manual processes."
+stock_short: "Welcome - A new way of working in biology, built on robust, reproducible Antha Elements"

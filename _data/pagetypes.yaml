@@ -6,12 +6,12 @@ start:
 concepts:
   headertitle: Concepts
   menu: docs
-core:
-  headertitle: Polymer
-  menu: docs
+compose:
+  headertitle: Compose
+  menu: elements
 elements:
   headertitle: Elements
   menu: elements
-platform:
-  headertitle: Platform
-  menu: docs
+execute:
+  headertitle: Execute
+  menu: elements
