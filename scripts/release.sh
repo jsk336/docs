@@ -20,10 +20,19 @@ bower update
 echo "=== Updating: components, polymer, polyfills, projects, and labs ==="
 
 ./polymer-all/tools/bin/pull-all.sh ./polymer-all/tools/repo-configs/deprecated.json ./scripts/website.json
-rm -rf polymer-all/projects/
-mv projects/ polymer-all/
+# don't need the polymer projects. TODO: don't clone them in the first place
+rm -rf projects
 cp -R js/bower_components/highlightjs/ components/highlightjs
+# override stock highlight with antha highlight
+cp js/highlight.pack.js components/highlightjs/
 cp -R js/bower_components/marked/ components/marked
 cp -R js/bower_components/plunker-button/ components/plunker-button
 cp -R js/bower_components/native-promise-only/ components/native-promise-only
+
+echo "=== Updating webcomponent.js ==="
+cd components/webcomponentjs/
+npm install
+gulp build
+cp dist/webcomponents.min.js ../../js/
+cd ../../
 

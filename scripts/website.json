@@ -13,12 +13,5 @@
     "repos": [
       "google-youtube"
     ]
-  },
-  {
-    "dir": "projects",
-    "org": "Polymer",
-    "repos": [
-      "polymer-tutorial"
-    ]
   }
 ]

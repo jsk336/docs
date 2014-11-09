@@ -10,7 +10,7 @@
     "antha",
     "documentation"
   ],
-  "license": "GPL2.0",
+  "license": "GPL2",
   "private": true,
   "ignore": [
     "**/.*",
@@ -24,6 +24,6 @@
     "x-tag-imports": "x-tag/x-tag-imports",
     "marked": "*",
     "highlightjs": "*",
-    "plunker-button": "robdodson/plunker-button#^0.4.1",
+    "plunker-button": "robdodson/plunker-button#^0.4.1"
   }
 }
