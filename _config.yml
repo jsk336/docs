@@ -1,26 +1,26 @@
 markdown: kramdown
-highlighter: null #pygments
+highlighter: pygments #pygments
 lsi: false
 safe: false
 
 #permalink: /news/:year/:month/:day/:title.html
 
-exclude: ["node_modules", "scripts", "sass", "app.yaml", "README.md",
+exclude: ["node_modules", "scripts", "sass", "README.md",
           "CONTRIBUTING.md", "Gruntfile.js", "package.json", "config.rb",
-          "build.py", "polymer-all", "components"]
+          "build.py", "polymer-all"]
 
 kramdown:
   toc_levels: 2..3
   #auto_ids: true
 
-  #input: GFM # enable github flavored markdown
+  input: GFM # enable github flavored markdown
   # use_coderay: true
   # coderay:
   #   coderay_line_numbers: nil
   #   coderay_css: style
 
 # Site globals used throughout docs.
-project_title: Polymer
-latest_version: 0.4.2
+project_title: Antha
+latest_version: 0.0.1
 add_permalinks: true # adds permalinks to heading tags.
 load_disqus: true

@@ -1,17 +1,16 @@
 {
-  "name": "polymer-site",
-  "version": "0.0.0",
-  "homepage": "https://github.com/Polymer/docs",
+  "name": "antha-site",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Synthace/docs",
   "authors": [
-    "Eric Bidelman <ebidel@gmail.com>"
+    "Sean Ward <sward@synthace.com>"
   ],
-  "description": "Polymer website",
+  "description": "Antha website",
   "keywords": [
-    "polymer",
-    "web components",
+    "antha",
     "documentation"
   ],
-  "license": "MIT",
+  "license": "GPL2.0",
   "private": true,
   "ignore": [
     "**/.*",
@@ -26,6 +25,5 @@
     "marked": "*",
     "highlightjs": "*",
     "plunker-button": "robdodson/plunker-button#^0.4.1",
-    "topeka": "Polymer/topeka"
   }
 }
