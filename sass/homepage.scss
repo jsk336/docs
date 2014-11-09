@@ -154,7 +154,7 @@ site-banner .logo {
   }
 }
 
-#future {
+#future, #everything-element {
   .panel {
     @include display-flex;
     padding-top: 125px;
@@ -171,7 +171,7 @@ site-banner .logo {
   }
 }
 @media only screen and (max-width: $break-medium) {
-  #future {
+  #future, #everything-element {
     padding-top: 30px;
     .panel {
       @include flex-direction(column);
@@ -222,7 +222,7 @@ site-banner .logo {
   min-height: 536px;
 }
 
-#learn, #everything-element {
+#learn {
   summary {
     color: #fff;
   }

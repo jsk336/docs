@@ -5,7 +5,7 @@ title: Welcome
 
 <section id="future" class="main-bg">
   <div class="panel left">
-    <img src="/images/logos/a-logo.png">
+    <img src="/images/logos/a-logo-color-416.svg">
     <summary>
       <h1>Coding Biology</h1>
       <p>Antha make it easy to rapidly compose biological work flows using individually testable and composable Antha Elements.</p>
@@ -96,19 +96,18 @@ title: Welcome
   </div>
 </section>
 
-<section id="everything-element" class="main-purple">
+<section id="everything-element" class="main-bg">
   <div class="panel right">
     <summary>
-      <h1>Everything is an element</h1>
-      <p>From <code>&lt;a&gt;</code> to <code>&lt;select&gt;</code>, elements are the building blocks of HTML. But modern applications have outgrown these built-in elements, forcing app developers to rely on JavaScript frameworks to provide dynamic, custom behavior.  The resulting apps are frequently complex and monolithic; a component developed for one may not work in another.
-      <br><br>
-      {{site.project_title}} puts elements back at the center of web development. With {{site.project_title}}, you can craft your own HTML elements and compose them into complete, complex applications that are scalable and maintainable.</p>
+      <h1>Share your work</h1>
+      <p>Antha Elements are environment independent, and can compile down to run on a wide range of lab equipment, including support for manual execution.
+      <br></p>
       <a href="/docs/start/everything.html">
         <paper-button>
           <core-icon icon="arrow-forward"></core-icon> Learn more
         </paper-button>
       </a>
     </summary>
-    <img src="/images/logos/p-elements.svg">
+    <img src="/images/logos/a-logo-color-416.svg">
   </div>
 </section>
