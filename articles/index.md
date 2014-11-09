@@ -4,7 +4,7 @@ type: core
 navgroup: docs
 shortname: Docs
 title: Articles
-subtitle: Core concepts of build apps on top of Polymer and web components
+subtitle: Core concepts of how to work in Antha
 
 add_permalinks: false
 ---
@@ -41,5 +41,5 @@ add_permalinks: false
 {% endfor %}
 
 <div style="margin-top:5em;">
-_Have an idea for an article? [Suggest it](https://github.com/Polymer/docs/issues/new)!_
+_Have an idea for an article? [Suggest it](https://github.com/Synthace/docs/issues/new)!_
 </div>

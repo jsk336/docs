@@ -2,10 +2,13 @@ default:
   menu: other
 start:
   headertitle: Basics
-  menu: docs
+  menu: start
 concepts:
   headertitle: Concepts
   menu: docs
+api:
+  headertitle: APIs
+  menu: api  
 compose:
   headertitle: Compose
   menu: elements

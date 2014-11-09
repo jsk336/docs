@@ -13,7 +13,7 @@ kramdown:
   toc_levels: 2..3
   #auto_ids: true
 
-  input: GFM # enable github flavored markdown
+  #input: GFM # enable github flavored markdown
   # use_coderay: true
   # coderay:
   #   coderay_line_numbers: nil
