@@ -20,7 +20,7 @@ title: FAQ
 
 ### Why do we need a high level language for doing biology? {#why}
 
-A high level language enables ease of design, better reproducibility and scalability. Lack of reproducibility is still a major barrier to progress in the biosciences (an article from Amgen reports that they could reproduce findings in only 11% of 53 published papers). 
+A high level language enables ease of design, better reproducibility and scalability. Lack of reproducibility is still a major barrier to progress in the biosciences (an [article](http://www.nature.com/nature/journal/v483/n7391/full/483531a.html) from Amgen reports that they could reproduce findings in only 11% of 53 published papers). 
 
 ### What about Biocoder, SBOL, PrPr and Chris? {#why}
 
@@ -38,6 +38,8 @@ the entire system and each polyfill, individually. See our [build status page](/
 ### Why choose google GO as the basis?
 
 Go is an open source language designed and built by Google to make building fast, simple and scalable software. Go is capable of concurrency and communicating directly with devices. Learn go [here] (http://go-book.appspot.com/index.html)
+
+### How can I contribute to the language?
 
 ## Data Access
 
@@ -61,5 +63,5 @@ Antha Elements follow the same packaging structure as GO packages. [Golang](http
 
 ### Can I integrate scripts from other languages such as Python or Matlab?
 
-### How can I contribute to the language?
+
 ---
