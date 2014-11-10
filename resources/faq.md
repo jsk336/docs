@@ -1,11 +1,10 @@
 ---
 layout: default
-type: resources
-navgroup: resources
-shortname: Resources
+type: references
+navgroup: references
+shortname: References
 title: FAQ
 ---
-
 
 {% include alpha.html %}
 
@@ -19,6 +18,14 @@ title: FAQ
 
 {{site.project_title}} is the first high level language designed to enable robust, reproducible and composible work in the biosciences. {{site.project_title}} is built on top of established technologies including Go, CouchDB, MORE TEXT HERE.
 
+### Why do we need a high level language for doing biology? {#why}
+
+A high level language enables ease of design, better reproducibility and scalability. Lack of reproducibility is still a major barrier to progress in the biosciences (an article from Amgen reports that they could reproduce findings in only 11% of 53 published papers). 
+
+### What about Biocoder, SBOL, PrPr and Chris? {#why}
+
+None of these are high-level languages capable of incorporating genetic design, experimental design, physical experimental execution and data processing.
+
 ### Is {{site.project_title}} production ready? {#readiness}
 
 {{site.project_title}} is currently in "community preview." Many of the pieces that are being integrated into {{site.project_title}} have been in production use at Synthace and other organisations for years. However, the full integration into {{site.project_title_}} is new and will inevitably uncover bugs in the component pieces it has brought together.
@@ -27,6 +34,10 @@ title: FAQ
 
 {{site.project_title}} uses Chromium's continuous build infrastructure to test
 the entire system and each polyfill, individually. See our [build status page](/build/).
+
+### Why choose google GO as the basis?
+
+Go is an open source language designed and built by Google to make building fast, simple and scalable software. Go is capable of concurrency and communicating directly with devices. Learn go [here] (http://go-book.appspot.com/index.html)
 
 ## Data Access
 
@@ -38,8 +49,17 @@ you like those sorts of things.
 
 ## Antha Elements
 
-### How do I package a bunch of custom elements together? {#packaging}
+### What sort of things can an element be?
+
+### How small should an element be?
+
+### How do I package a bunch of custom elements together into a workflow? {#packaging}
 
 Antha Elements follow the same packaging structure as GO packages. [Golang](https://code.google.com/p/go-wiki/wiki/PackagePublishing)
 
+### Where do all the low-level details go? Does it matter? 
+
+### Can I integrate scripts from other languages such as Python or Matlab?
+
+### How can I contribute to the language?
 ---
