@@ -22,7 +22,7 @@ title: FAQ
 
 A high level language enables ease of design, better reproducibility and scalability. Lack of reproducibility is still a major barrier to progress in the biosciences (an [article](http://www.nature.com/nature/journal/v483/n7391/full/483531a.html) from Amgen reports that they could reproduce findings in only 11% of 53 published papers). 
 
-### Why is this only being done now?
+### Why is this only being done now? (needs editing)
 The will to improve reproducibility is not new. In recent years efforts have been made to abstract the layers of biological complexity and to standardize by breaking down biological components into repositories of well-characterised standardized parts which can be combined to form more complex devices. The biobrick registry at iGEM is a good example of this. This is a move in the right direction but the problem is far from fully solved since biology is not that simple and often it's not possible to standardise parts.
 The idea of abstraction and standardization are very welcome but unfortunately we don’t yet fully understand how even the simplest and most well-studied bacteria such as E.coli function… We know that the genome is 5.7million letters long and that about 4-5000 genes are produced but only around 66% of these genes have been experimentally verified. So how can we use a standardized parts based approach to building new microbes when we don’t fully understand how the operating system works? 
 The answer may be to standardize the experimental format in which these parts are characterized, and capture all of the subtle artisanal details of a procedure not usually captured in a material and methods section of a research article.
