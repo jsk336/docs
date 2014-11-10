@@ -30,7 +30,7 @@ cp -R js/bower_components/plunker-button/ components/plunker-button
 cp -R js/bower_components/native-promise-only/ components/native-promise-only
 
 echo "=== Updating webcomponent.js ==="
-cd components/webcomponentjs/
+cd components/webcomponentsjs/
 npm install
 gulp build
 cp dist/webcomponents.min.js ../../js/
