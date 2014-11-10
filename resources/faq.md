@@ -40,6 +40,7 @@ the entire system and each polyfill, individually. See our [build status page](/
 Go is an open source language designed and built by Google to make building fast, simple and scalable software. Go is capable of concurrency and communicating directly with devices. Learn go [here] (http://go-book.appspot.com/index.html)
 
 ### How can I contribute to the language?
+Absolutely, we welcome contributions to both the langauge itself and the building of elements. Sign up to the mailing list to stay up to date. 
 
 ## Data Access
 
@@ -50,6 +51,8 @@ experimeent execution into open JSON based data. The original proprietary format
 you like those sorts of things.
 
 ## Antha Elements
+
+### What is an element? 
 
 ### What sort of things can an element be?
 
@@ -63,4 +66,3 @@ Antha Elements follow the same packaging structure as GO packages. [Golang](http
 
 ### Can I integrate scripts from other languages such as Python or Matlab?
 
-### How can I contribute to the language?
