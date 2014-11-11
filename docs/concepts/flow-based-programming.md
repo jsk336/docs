@@ -6,9 +6,7 @@ As biological research and development becomes more and more computerized, we wi
 
 The mechanics of FBP are best described by the inventor himself, J. Paul Morrison
 
-```
-Flow-Based Programming defines applications using the metaphor of a "data factory". It views an application not as a single, sequential process, which starts at a point in time, and then does one thing at a time until it is finished, but as a network of asynchronous processes communicating by means of streams of structured data chunks, called "information packets" (IPs). (http://www.jpaulmorrison.com/fbp/introduction.html)
-```
+>Flow-Based Programming defines applications using the metaphor of a "data factory". It views an application not as a single, sequential process, which starts at a point in time, and then does one thing at a time until it is finished, but as a network of asynchronous processes communicating by means of streams of structured data chunks, called "information packets" (IPs). (http://www.jpaulmorrison.com/fbp/introduction.html)
 
 Despite having been around for over 40 years, FBP is recently gaining in popularity, largely due to the efforts of Henri Bergius via NoFlo. (http://noflojs.org/).  Modern FBP systems can take advantage of computer systems with multiple cores which allow it to run processes concurrently, thus cutting down on computation time.
 
