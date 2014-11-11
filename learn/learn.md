@@ -4,7 +4,7 @@
 
 
 There is still a huge problem of reproducibility in the biosciences. Unfortunately it is often not as routine as you might think to replicate work reported in the scientific literature, or even work in the same lab by the same person (yeah you!). 
-A report in Nature in 2012 reported that scientists at Amgen managed to reproduce only 11% of 53 cancer-related studies which they'd attempted over the years. Shocking but unfortunately this is fairly typical and needless to say the cost of this to society is likley to be staggering. With this background, can we really standardise biology and build complex systems as we intend to in the synthetic biology community?
+A report in Nature in 2012 reported that scientists at Amgen managed to reproduce only 11% of 53 cancer-related studies which they'd attempted over the years. Shocking! but unfortunately this is fairly typical and needless to say the cost of this to society is likley to be staggering. With this background, can we really standardise biology and build complex systems as we intend to in the synthetic biology community?
 
 Driven by our in-house needs and what we've learnt through statistal experimentation, automation and advances in the tech sphere, we've come to understand that the whole way in which experiments are designed and recorded needs to fundamentally change in order to solve this problem. The answer... Antha
 
@@ -25,7 +25,7 @@ Antha will automatically track and log all associated data when the element is e
 
 Antha is an end-to-end fully integrated language with quality control built in to its DNA. As well as a language for experimental design, execution and data processing, it’s a LIMs system, data-management system and QA system, yet simple and fun to use. The language is designed to effortlessly incorporate quality standards such as quality by design and GMP level quality standards without the overhead for the user. This means enhanced traceability, reproducibility and simplicity for the user.
 
-With the example of a simple step such as recovering a frozen cell stock and incubating there are many factors which might effect the reproducibility and quality of the procedure which could have a knock on effect in subsequent processes. Normally it would be very laborious to capture all of these variables but Antha aims to capture as many of them as possible automatically. 
+There are many factors which can affect an experiment which typically wouldn't be recorded. With the example of a simple step such as recovering a frozen cell stock and incubating there are many factors which might effect the reproducibility and quality of the procedure which could have a knock on effect in subsequent processes. Normally it would be very laborious to capture all of these variables but Antha aims to capture as many of them as possible automatically. 
 <img src="/images/Antha_seedelement_sourcesofvariability" >
 
 Because of the abstraction and modularity of Antha, it can potentially be the design and processing tool for experiments carried out on any instrumentation; manually or automated. 
