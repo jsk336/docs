@@ -47,7 +47,7 @@ the entire system and each polyfill, individually. See our [build status page](/
 
 Go is an open source language designed and built by Google to make building fast, simple and scalable software. Go is capable of concurrency and communicating directly with devices. Learn go [here] (http://go-book.appspot.com/index.html)
 
-### How can I contribute to the language?
+### Can I contribute to the Antha project?
 Absolutely, we welcome contributions to both the langauge itself and the building of elements. Sign up to the mailing list to stay up to date. 
 
 ## Data Access
@@ -62,9 +62,11 @@ you like those sorts of things.
 
 ### What is an element? 
 
-### What sort of things can an element be?
+An element is a reusable unit which can be wired up with other elements to form workflows. An element can be anything from genetic elements (such as a promoter, ribosome binding site, transcription factor, host cell) to experimental procedures such as DNA assembly, incubation, protein expression or enzyme assays. 
 
 ### How small should an element be?
+
+An element should be designed as small as possible yet robustly with built-in validation criteria. Antha will automatically track and log all associated data when the element is executed. Essentially this enables not just the standardization of the genetic parts but standardization and full tracking of the experimental procedure used to characterise. This will inherently allow for greater reproducibility, simplicity and scalability when the elements are wired together to form workflows. Once elements and workflows are designed and tested they can be shared, traded and reviewed in the Antha market place or embedded as a downloadable and executable material and methods section of a research article.
 
 ### How do I package a bunch of custom elements together into a workflow? {#packaging}
 
