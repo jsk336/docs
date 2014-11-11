@@ -116,7 +116,7 @@ Units are composed with SI prefices to create PrefixedUnits. The system implemen
 the standard SI prefix definitions as follows
 
 Prefix | name | meaning
------------------------
+-------|------|--------
 y | yocto | 10e-24
 z | zepto | 10e-24
 a | atto | 10e-18
@@ -138,7 +138,7 @@ P | peta | 10e15
 E | exa | 10e18
 Z | zetta | 10e12
 Y | yotta | 10e24
------------------------
+------|------|---------
 
 Antha generally defines quantities using a Measurement type, which combines a 
 PrefixedUnit with a value, which is a floating-point (decimal) number. 
