@@ -14,7 +14,9 @@ Many conventional programming languages use the concept of a variable
 *type* to define what sort of data is allowed to be stored in a particular
 variable. The following example is quite typical:
 
-```int i=0
+```
+int i=0
+```
 
 This statement does three things: 
 
@@ -24,7 +26,9 @@ This statement does three things:
 
 The go language, from which Antha derives much of its syntax, expresses this a little more briefly:
 
-```i:=0
+```
+i:=0
+```
 
 This statement does exactly the same job as the first one, however it omits a specific 
 reference to the variable type since it can be inferred from the use of the integer value 0 
