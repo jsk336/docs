@@ -1,20 +1,17 @@
 default:
   menu: other
 start:
-  headertitle: Basics
+  headertitle: Introduction
   menu: start
 concepts:
   headertitle: Concepts
   menu: docs
 api:
-  headertitle: APIs
-  menu: api  
-compose:
-  headertitle: Compose
-  menu: elements
-elements:
-  headertitle: Elements
-  menu: elements
-execute:
-  headertitle: Execute
-  menu: elements
+  headertitle: APIS
+  menu: docs  
+implement:
+  headertitle: How it Works
+  menu: docs
+examples:
+  headertitle: Examples
+  menu: start

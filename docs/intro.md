@@ -1,7 +1,7 @@
 ---
 layout: default
 type: start
-shortname: Start
+shortname: Intro
 navgroup: start
 title: Introduction to Antha
 ---
