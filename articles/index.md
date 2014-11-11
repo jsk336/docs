@@ -1,8 +1,8 @@
 ---
 layout: default
 type: core
-navgroup: docs
-shortname: Docs
+navgroup: resources
+shortname: articles
 title: Articles
 subtitle: Core concepts of how to work in Antha
 
