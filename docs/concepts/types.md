@@ -95,7 +95,7 @@ g | gramme | mass
 V | Volt | electrical potential (energy / coulomb)
 J | Joule | energy
 A | Ampere | electrical current
-N | Newton | Force 
+N | Newton | force 
 s | second | time
 rads/radians | radians | angle
 degrees | degrees | angle
@@ -105,7 +105,6 @@ C | Celisus | temperature
 M/l | Moles per litre | concentraiton
 g/l | grammes per litre | concentration
 J/kg | Joules per kilogram | specific heat capacity
----------------------------------
 
 To permit static type checking, units are mapped into dimensions. In the alpha
 release this is not strictly in line with the usual meaning of dimension (e.g. 
@@ -138,7 +137,6 @@ P | peta | 10e15
 E | exa | 10e18
 Z | zetta | 10e12
 Y | yotta | 10e24
------------------------
 
 Antha generally defines quantities using a Measurement type, which combines a 
 PrefixedUnit with a value, which is a floating-point (decimal) number. 
@@ -175,7 +173,6 @@ water | basis of all solutions made in water
 glycerol | basis of all solutions with high viscosity
 ethanol | basis of all volatile solutions
 surfactant | basis of all solutions which foam
------|------
 
 Since it would be difficult to properly define all liquid types up front the intention is for
 solutions to derive their matter type from the liquids defined in this table. Thus all solutions
