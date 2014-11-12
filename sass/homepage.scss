@@ -154,7 +154,7 @@ site-banner .logo {
   }
 }
 
-#future, #everything-element {
+#future, #keep-in-touch {
   .panel {
     @include display-flex;
     padding-top: 125px;
@@ -171,7 +171,7 @@ site-banner .logo {
   }
 }
 @media only screen and (max-width: $break-medium) {
-  #future, #everything-element {
+  #future, #keep-in-touch {
     padding-top: 30px;
     .panel {
       @include flex-direction(column);
@@ -210,7 +210,7 @@ site-banner .logo {
   }
 }
 
-#designer {
+#composer {
   summary {
     h3 {
       margin: 1em 0;
@@ -228,7 +228,7 @@ site-banner .logo {
   }
 }
 
-#everything-element {
+#keep-in-touch {
   code {
     color: currentcolor;
   }

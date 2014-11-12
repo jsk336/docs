@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome
+title: Welcome to Antha
 ---
 
 <section id="future" class="main-bg">
@@ -9,9 +9,9 @@ title: Welcome
     <summary>
       <h1>Coding Biology</h1>
       <p>Antha make it easy to rapidly compose biological work flows using individually testable and composable Antha Elements.</p>
-      <a href="/docs/start/introduction.html">
+      <a href="/docs/intro.html">
         <paper-button raised unresolved>
-          <core-icon icon="archive"></core-icon> Get {{site.project_title}}
+          <core-icon icon="archive"></core-icon> Learn More
         </paper-button>
       </a>
       <a href="https://github.com/Synthace/antha">
@@ -31,6 +31,7 @@ title: Welcome
   </div>
 </section>
 
+{% comment %}
 <section id="featured">
   <div class="panel right">
     <summary>
@@ -74,19 +75,20 @@ title: Welcome
     </summary>
   </div>
 </section>
+{% endcomment %}
 
-<section id="designer" class="main-purple">
+<section id="composer" class="main-purple">
   <div class="panel">
     <summary style="transform: translateZ(0);">
-      <h1>Designer</h1>
-      <a href="/tools/designer/" target="_blank">
-        <img src="/images/flow-gui.png" alt="Launch the designer tool" title="Launch the designer tool">
+      <h1>Composer</h1>
+      <a href="/docs/flow-based-programming.html" target="_blank">
+        <img src="/images/flow-gui.png" height="300" alt="Learn More About Composition" title="Learn More About Composition">
       </a>
       <div>
         <p>
         Composer is a visual tool for wiring workflows using {{site.project_title}}. Rapidly define and execute your experiments.
         </p>
-        <a href="/tools/designer/" target="_blank">
+        <a href="/docs/flow-based-programming.html/" target="_blank">
           <paper-button>
             <core-icon icon="arrow-forward"></core-icon> Learn More
           </paper-button>
@@ -96,18 +98,29 @@ title: Welcome
   </div>
 </section>
 
-<section id="everything-element" class="main-bg">
+<section id="keep-in-touch" class="main-bg">
   <div class="panel right">
     <summary>
-      <h1>Share your work</h1>
-      <p>Antha Elements are environment independent, and can compile down to run on a wide range of lab equipment, including support for manual execution.
-      <br></p>
-      <a href="/docs/start/everything.html">
-        <paper-button>
-          <core-icon icon="arrow-forward"></core-icon> Learn more
-        </paper-button>
-      </a>
+      <h1>Keep in Touch</h1>
+      <p>Antha is under rapid and open development. You can subsribe to low volume updates as it progresses, or you can dive in to help build Antha faster</p>
+	  <div layout horizontal justified>
+		  <div></div>
+		  <div>
+	  		<a href="https://groups.google.com/a/antha-lang.org/group/antha-dev/boxsubscribe">
+		  	  	<paper-button raised>
+		  			<core-icon icon="mail"></core-icon> Keep in Touch
+				</paper-button>
+			</a>
+		  </div>
+		  <div></div>
+		  <div>	
+      		<a href="/docs/intro.html">
+        		<paper-button raised>
+          	  		<core-icon icon="arrow-forward"></core-icon> Learn more
+        		</paper-button>
+      	  	</a>
+		  </div>
+		  <div></div>
     </summary>
-    <img src="/images/logos/a-logo-color-416.svg">
   </div>
 </section>
