@@ -2,12 +2,12 @@
 layout: default
 type: api
 navgroup: docs
-shortname: scanner
-title: scanner
+shortname: antha/scanner
+title: antha/scanner
 apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
-  package: scanner
+  package: antha/scanner
 ---
 # scanner
 --

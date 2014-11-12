@@ -2,12 +2,12 @@
 layout: default
 type: api
 navgroup: docs
-shortname: wunit
-title: wunit
+shortname: anthalib/wunit
+title: anthalib/wunit
 apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
-  package: wunit
+  package: anthalib/wunit
 ---
 # wunit
 --

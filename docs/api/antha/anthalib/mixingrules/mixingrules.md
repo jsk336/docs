@@ -2,10 +2,10 @@
 layout: default
 type: api
 navgroup: docs
-shortname: mixingrules
-title: mixingrules
+shortname: anthalib/mixingrules
+title: anthalib/mixingrules
 apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
-  package: mixingrules
+  package: anthalib/mixingrules
 ---

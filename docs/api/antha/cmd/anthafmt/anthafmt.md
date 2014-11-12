@@ -2,12 +2,12 @@
 layout: default
 type: api
 navgroup: docs
-shortname: anthafmt
-title: anthafmt
+shortname: cmd/anthafmt
+title: cmd/anthafmt
 apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
-  package: anthafmt
+  package: cmd/anthafmt
 ---
 # anthafmt
 --

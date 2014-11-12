@@ -2,12 +2,12 @@
 layout: default
 type: api
 navgroup: docs
-shortname: anthadoc
-title: anthadoc
+shortname: cmd/anthadoc
+title: cmd/anthadoc
 apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
-  package: anthadoc
+  package: cmd/anthadoc
 ---
 # anthadoc
 --

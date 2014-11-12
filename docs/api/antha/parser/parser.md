@@ -2,12 +2,12 @@
 layout: default
 type: api
 navgroup: docs
-shortname: parser
-title: parser
+shortname: antha/parser
+title: antha/parser
 apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
-  package: parser
+  package: antha/parser
 ---
 # parser
 --

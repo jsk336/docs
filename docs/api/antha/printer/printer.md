@@ -2,12 +2,12 @@
 layout: default
 type: api
 navgroup: docs
-shortname: printer
-title: printer
+shortname: antha/printer
+title: antha/printer
 apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
-  package: printer
+  package: antha/printer
 ---
 # printer
 --

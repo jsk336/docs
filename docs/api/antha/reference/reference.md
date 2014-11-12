@@ -2,12 +2,12 @@
 layout: default
 type: api
 navgroup: docs
-shortname: reference
-title: reference
+shortname: antha/reference
+title: antha/reference
 apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
-  package: reference
+  package: antha/reference
 ---
 # reference
 --

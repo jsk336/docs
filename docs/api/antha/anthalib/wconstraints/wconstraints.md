@@ -2,12 +2,12 @@
 layout: default
 type: api
 navgroup: docs
-shortname: wconstraints
-title: wconstraints
+shortname: anthalib/wconstraints
+title: anthalib/wconstraints
 apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
-  package: wconstraints
+  package: anthalib/wconstraints
 ---
 # wconstraints
 --

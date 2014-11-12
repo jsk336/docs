@@ -2,10 +2,10 @@
 layout: default
 type: api
 navgroup: docs
-shortname: example
-title: example
+shortname: examples/example
+title: examples/example
 apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
-  package: example
+  package: examples/example
 ---

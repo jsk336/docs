@@ -2,12 +2,12 @@
 layout: default
 type: api
 navgroup: docs
-shortname: wutil
-title: wutil
+shortname: anthalib/wutil
+title: anthalib/wutil
 apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
-  package: wutil
+  package: anthalib/wutil
 ---
 # wutil
 --

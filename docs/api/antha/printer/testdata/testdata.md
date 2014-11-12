@@ -2,12 +2,12 @@
 layout: default
 type: api
 navgroup: docs
-shortname: testdata
-title: testdata
+shortname: printer/testdata
+title: printer/testdata
 apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
-  package: testdata
+  package: printer/testdata
 ---
 # parser
 --
