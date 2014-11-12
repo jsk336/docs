@@ -9,39 +9,17 @@ apidocs:
   antha_version: 0.0.1
   package: doc/testdata
 ---
-# error1
+# f
 --
     import "."
 
+The package f is a go/doc test for functions and factory methods.
 
 ## Usage
 
-#### type I0
+#### func  Exported
 
 ```go
-type I0 interface {
-	// When embedded, the predeclared error interface
-	// must remain visible in interface types.
-	error
-}
+func Exported() private
 ```
-
-
-#### type S0
-
-```go
-type S0 struct {
-}
-```
-
-
-#### type T0
-
-```go
-type T0 struct {
-	ExportedField interface {
-		// error should be visible
-		error
-	}
-}
-```
+Exported must always be visible. Was issue 2824.

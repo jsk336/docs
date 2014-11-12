@@ -57,4 +57,4 @@ extract the lineage of one particular node
 ```go
 func (t TOL) IsAncestorOf(t2 *TOL) string
 ```
-returns true if t is the ancestor of t2
+returns the string name of the LCA if t is the ancestor of t2
