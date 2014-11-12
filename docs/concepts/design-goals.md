@@ -4,6 +4,11 @@ type: concepts
 navgroup: docs
 shortname: Goals
 title: Design Goals of Antha
+docs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  description: The summary of the core principles that have driven the design of Antha.
+
 ---
 {% include toc.html %}
 

@@ -4,6 +4,10 @@ type: concepts
 navgroup: docs
 shortname: Types
 title: The Antha Type System
+docs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  description: What is a type, and why a strong type system is so key to Antha.
 ---
 {% include toc.html %}
 

@@ -4,6 +4,10 @@ type: concepts
 navgroup: docs
 shortname: FBP
 title: Flow Based Programming in Antha
+docs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  description: What is Flow Based Programming, and why it is appropriate for Antha.
 ---
 
 {% include toc.html %}
