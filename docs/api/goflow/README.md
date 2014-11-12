@@ -1,3 +1,15 @@
+---
+layout: default
+type: api
+navgroup: goflow-api
+shortname: goflow-api.md
+title: goflow-readme.md
+flowapidocs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  package: goflow-api.md
+---
+
 # GoFlow - Dataflow and Flow-based programming library for Go (golang)
 
 This is quite a minimalistic implementation of [Flow-based programming](http://en.wikipedia.org/wiki/Flow-based_programming) and several other concurrent models in Go programming language that aims at designing applications as graphs of components which react to data that flows through the graph. This model is a modified version of the goflow language created by [V. Sibirov](https://github.com/trustmaster/goflow) but it allows for multiple channels to be opened over a single process.

@@ -1,3 +1,15 @@
+---
+layout: default
+type: api
+navgroup: goflow-api
+shortname: goflow-api.md
+title: goflow.md
+flowapidocs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  package: execution-api.md
+---
+
 # flow
 --
     import "."
