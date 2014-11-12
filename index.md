@@ -66,7 +66,7 @@ title: Welcome to Antha
 			<div id="track">
 				<segment layout verticalt>
 					<h2><core-icon src="images/noun/data.svg" class="icon-big"></core-icon> Track</h2>
-					<p>Automatically track, validate, and your results</p>					
+					<p>Automatically track and validate your results</p>					
 				</segment>
 		  	</div>
 			<div id="open">
@@ -106,7 +106,7 @@ title: Welcome to Antha
   <div class="panel right">
     <summary>
       <h1>Keep in Touch</h1>
-      <p>Antha is under rapid and open development. You can subsribe to low volume updates as it progresses, or you can dive in to help build Antha faster</p>
+      <p>Antha is under rapid and open development. You can subscribe to low volume updates as it progresses, or you can dive in to help build Antha faster</p>
 	  <div layout horizontal justified>
 		  <div></div>
 		  <div>
