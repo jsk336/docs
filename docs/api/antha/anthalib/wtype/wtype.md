@@ -1,3 +1,14 @@
+---
+layout: default
+type: api
+navgroup: docs
+shortname: wtype
+title: wtype
+apidocs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  package: wtype
+---
 # wtype
 --
     import "."
@@ -41,7 +52,6 @@ type BioSequence interface {
 
 ```go
 type Chiller interface {
-	Device
 	Cool(p Physical, t wunit.Temperature)
 	CoolingRate() wunit.Measurement
 }
@@ -122,7 +132,6 @@ func (dna *DNASequence) Sequence() string
 
 ```go
 type DeSealer interface {
-	Device
 	Peel(s Sealed) Solid
 }
 ```
@@ -151,7 +160,7 @@ type Entity interface {
 }
 ```
 
-implemented if this is a separate, independent thing which can be moved
+The Entity interface declares that this object is an independently movable thing
 
 #### type Environment
 
@@ -213,6 +222,23 @@ func (gd *GenericDevice) Ready() bool
 ```go
 func (gd *GenericDevice) Type() string
 ```
+
+#### type GenericEntity
+
+```go
+type GenericEntity struct {
+	GenericSolid
+}
+```
+
+a simple structure to allow a generic entity class to be defined
+
+#### func (*GenericEntity) IsEntity
+
+```go
+func (ge *GenericEntity) IsEntity()
+```
+dummy method
 
 #### type GenericLiquid
 
@@ -316,6 +342,12 @@ func NewGenericPhysical(mattertype string) GenericPhysical
 func (gp *GenericPhysical) Clone() GenericPhysical
 ```
 
+#### func (*GenericPhysical) Density
+
+```go
+func (gp *GenericPhysical) Density() wunit.Density
+```
+
 #### func (*GenericPhysical) Mass
 
 ```go
@@ -368,7 +400,7 @@ func (gp *GenericPhysical) Volume() wunit.Volume
 
 ```go
 type GenericSBSFormatPlate struct {
-	GenericMatter
+	GenericEntity
 	Manufr  string
 	LType   string
 	WellArr [][]Well
@@ -380,6 +412,13 @@ type GenericSBSFormatPlate struct {
 
 ```go
 func (gl *GenericSBSFormatPlate) Add(p Physical)
+```
+find the first empty well and add this to it
+
+#### func (*GenericSBSFormatPlate) FirstEmptyWell
+
+```go
+func (gl *GenericSBSFormatPlate) FirstEmptyWell() Well
 ```
 
 #### func (*GenericSBSFormatPlate) LabwareType
@@ -398,12 +437,6 @@ func (gl *GenericSBSFormatPlate) Manufacturer() string
 
 ```go
 func (gl *GenericSBSFormatPlate) Material() Matter
-```
-
-#### func (*GenericSBSFormatPlate) Remove
-
-```go
-func (gl *GenericSBSFormatPlate) Remove(v Volume) Physical
 ```
 
 #### func (*GenericSBSFormatPlate) WellAt
@@ -440,6 +473,8 @@ type GenericWell struct {
 	GenericSolid
 	ArrCnts []Physical
 	Crds    WellCoords
+	Vol     wunit.Volume
+	Plate   *GenericSBSFormatPlate
 }
 ```
 
@@ -471,13 +506,7 @@ func (gw *GenericWell) Contents() []Physical
 #### func (*GenericWell) PartOf
 
 ```go
-func (gw *GenericWell) PartOf() *Entity
-```
-
-#### func (*GenericWell) Remove
-
-```go
-func (gw *GenericWell) Remove(v wunit.Volume) Physical
+func (gw *GenericWell) PartOf() Entity
 ```
 
 #### type Geometry
@@ -495,7 +524,6 @@ type Geometry interface {
 
 ```go
 type Heater interface {
-	Device
 	Heat(p Physical, t wunit.Temperature)
 	HeatingRate() wunit.Measurement
 }
@@ -551,7 +579,6 @@ base type for defining materials
 
 ```go
 type Mover interface {
-	Device
 	Grab(e Entity)
 	Drop() Entity
 	MoveGripperTo(c coordinates)
@@ -635,7 +662,6 @@ a sample of matter
 
 ```go
 type Pipetter interface {
-	Device
 	Aspirate(l Liquid)
 	Dispense(l Liquid)
 	MovePipetteTo(c coordinates)
@@ -738,7 +764,6 @@ type Sealed interface {
 
 ```go
 type Sealer interface {
-	Device
 	Seal(s Solid) Sealed
 }
 ```

@@ -1,3 +1,14 @@
+---
+layout: default
+type: api
+navgroup: docs
+shortname: wunit
+title: wunit
+apidocs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  package: wunit
+---
 # wunit
 --
     import "."
@@ -192,6 +203,21 @@ func (cm *ConcreteMeasurement) SetValue(v float64) float64
 
 ```go
 func (cm *ConcreteMeasurement) Unit() PrefixedUnit
+```
+
+#### type Density
+
+```go
+type Density struct {
+	ConcreteMeasurement
+}
+```
+
+
+#### func  NewDensity
+
+```go
+func NewDensity(v float64, unit string) Density
 ```
 
 #### type Energy

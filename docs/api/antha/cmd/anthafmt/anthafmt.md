@@ -1,3 +1,14 @@
+---
+layout: default
+type: api
+navgroup: docs
+shortname: anthafmt
+title: anthafmt
+apidocs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  package: anthafmt
+---
 # anthafmt
 --
 Gofmt formats Go programs. It uses tabs (width = 8) for indentation and blanks

@@ -1,3 +1,14 @@
+---
+layout: default
+type: api
+navgroup: docs
+shortname: liquidhandling
+title: liquidhandling
+apidocs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  package: liquidhandling
+---
 # liquidhandling
 --
     import "."
@@ -10,6 +21,7 @@
 ```go
 func Init(request LHRequest) *liquidhandler
 ```
+initialize the liquid handling structure
 
 #### func  MakeConfigFile
 
@@ -28,6 +40,7 @@ func MakePlanFile(fn string, request LHRequest)
 ```go
 func RunLiquidHandler(*chan *LHRequest)
 ```
+tell the liquid handler to run
 
 #### type LHRequest
 
@@ -35,21 +48,26 @@ func RunLiquidHandler(*chan *LHRequest)
 type LHRequest map[string]interface{}
 ```
 
+map structure defining a liquid handling request
 
 #### func  BasicExecutionPlanner
 
 ```go
 func BasicExecutionPlanner(request, parameters LHRequest) LHRequest
 ```
+a default execution planner which relies on a call to code external to the Antha
+project.
 
 #### func  BasicLayoutAgent
 
 ```go
 func BasicLayoutAgent(request, params LHRequest) LHRequest
 ```
+default layout: requests fill plates in column order
 
 #### func  BasicSetupAgent
 
 ```go
 func BasicSetupAgent(request, params LHRequest) LHRequest
 ```
+default setup agent
