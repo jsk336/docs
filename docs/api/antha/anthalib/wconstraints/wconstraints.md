@@ -25,6 +25,8 @@ type Constraint interface {
 }
 ```
 
+Interface to define a constraint -- the main requirement is that the constraint
+can be checked
 
 #### type Constraints
 
@@ -35,6 +37,7 @@ type Constraints interface {
 }
 ```
 
+general constraint handling interface
 
 #### type TempConstraint
 
@@ -45,13 +48,15 @@ type TempConstraint struct {
 }
 ```
 
-Temperature constraint
+Temperature constraint -- sample must be kept within the specified limits
+defines a max and a min temperature
 
 #### func (TempConstraint) Check
 
 ```go
 func (tc TempConstraint) Check(i interface{}) bool
 ```
+Test the constraint against the current temperature
 
 #### type TimeConstraint
 
@@ -62,10 +67,12 @@ type TimeConstraint struct {
 }
 ```
 
-time constraint
+time constraint - simply keeps track of a duration by recording when the
+constraint was created and how long it is
 
 #### func (*TimeConstraint) Check
 
 ```go
 func (tc *TimeConstraint) Check(i interface{}) bool
 ```
+test whether time is up

@@ -13,6 +13,7 @@ apidocs:
 --
     import "."
 
+defines types for dealing with liquid handling requests
 
 ## Usage
 
@@ -42,13 +43,53 @@ func RunLiquidHandler(*chan *LHRequest)
 ```
 tell the liquid handler to run
 
+#### type LHComponent
+
+```go
+type LHComponent map[string]interface{}
+```
+
+structure describing a liquid component and its desired properties
+
+#### type LHParameter
+
+```go
+type LHParameter map[string]interface{}
+```
+
+describes sets of parameters which can be used to create a configuration
+
+#### type LHPlate
+
+```go
+type LHPlate map[string]interface{}
+```
+
+structure describing a microplate
+
+#### type LHPosition
+
+```go
+type LHPosition map[string]interface{}
+```
+
+describes a position on the liquid handling deck and its current state
+
+#### type LHPrms
+
+```go
+type LHPrms map[string]interface{}
+```
+
+describes a liquid handler, its capabilities and current state
+
 #### type LHRequest
 
 ```go
 type LHRequest map[string]interface{}
 ```
 
-map structure defining a liquid handling request
+structure for defining a request to the liquid handler
 
 #### func  BasicExecutionPlanner
 
@@ -71,3 +112,27 @@ default layout: requests fill plates in column order
 func BasicSetupAgent(request, params LHRequest) LHRequest
 ```
 default setup agent
+
+#### type LHSetup
+
+```go
+type LHSetup map[string]interface{}
+```
+
+structure defining a liquid handler setup
+
+#### type LHSolution
+
+```go
+type LHSolution map[string]interface{}
+```
+
+structure describing a solution: a combination of liquid components
+
+#### type LHWell
+
+```go
+type LHWell map[string]interface{}
+```
+
+structure representing a well on a microplate - description of a destination

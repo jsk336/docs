@@ -21,36 +21,42 @@ apidocs:
 ```go
 func GetPrefixLib(fn string) (*(map[string]SIPrefix), error)
 ```
+deserialize JSON prefix library
 
 #### func  GetUnitLib
 
 ```go
 func GetUnitLib(fn string) (*(map[string]GenericUnit), error)
 ```
+deserialize JSON unit library
 
 #### func  MakePrefices
 
 ```go
 func MakePrefices() map[string]SIPrefix
 ```
+make the prefix structure
 
 #### func  Make_units
 
 ```go
 func Make_units() map[string]GenericUnit
 ```
+generate an initial unit library
 
 #### func  NewWFloat
 
 ```go
 func NewWFloat(v float64) wfloat
 ```
+wrap a float in the wvalue structure
 
 #### func  NewWInt
 
 ```go
 func NewWInt(v int) wint
 ```
+wrap an int in the wvalue structure
 
 #### func  NewWString
 
@@ -63,18 +69,23 @@ func NewWString(v string) wstring
 ```go
 func PrefixDiv(x string, y string) string
 ```
+divide one prefix by another take care: there are no checks for going out of
+bounds e.g. Z/z will give an error!
 
 #### func  PrefixMul
 
 ```go
 func PrefixMul(x string, y string) string
 ```
+multiply two prefix values take care: there are no checks for going out of
+bounds e.g. Z*Z will generate an error!
 
 #### func  ReverseLookupPrefix
 
 ```go
 func ReverseLookupPrefix(i int) string
 ```
+helper function for reverse lookup of prefix
 
 #### type Amount
 
@@ -91,12 +102,14 @@ mole
 ```go
 func NewAmount(v float64, unit string) Amount
 ```
+generate a new Amount in moles
 
 #### func (*Amount) Quantity
 
 ```go
 func (a *Amount) Quantity() Measurement
 ```
+defines Amount to be a SubstanceQuantity
 
 #### type Angle
 
@@ -113,6 +126,7 @@ angle
 ```go
 func NewAngle(v float64, unit string) Angle
 ```
+generate a new angle unit
 
 #### type Area
 
@@ -129,6 +143,7 @@ area
 ```go
 func NewArea(v float64, unit string) Area
 ```
+make an area unit
 
 #### type BaseUnit
 
@@ -147,6 +162,7 @@ type BaseUnit interface {
 }
 ```
 
+structure defining a base unit
 
 #### type Concentration
 
@@ -156,12 +172,14 @@ type Concentration struct {
 }
 ```
 
+defines a concentration unit
 
 #### func  NewConcentration
 
 ```go
 func NewConcentration(v float64, unit string) Concentration
 ```
+make a new concentration in SI units... either M/l or kg/l
 
 #### type ConcreteMeasurement
 
@@ -174,36 +192,42 @@ type ConcreteMeasurement struct {
 }
 ```
 
+structure implementing the Measurement interface
 
 #### func  NewMeasurement
 
 ```go
 func NewMeasurement(v float64, unit string, prefix string) ConcreteMeasurement
 ```
+helper function for creating a new measurement
 
 #### func (*ConcreteMeasurement) RawValue
 
 ```go
 func (cm *ConcreteMeasurement) RawValue() float64
 ```
+value without conversion
 
 #### func (*ConcreteMeasurement) SIValue
 
 ```go
 func (cm *ConcreteMeasurement) SIValue() float64
 ```
+value when converted to SI units
 
 #### func (*ConcreteMeasurement) SetValue
 
 ```go
 func (cm *ConcreteMeasurement) SetValue(v float64) float64
 ```
+set the value of this measurement
 
 #### func (*ConcreteMeasurement) Unit
 
 ```go
 func (cm *ConcreteMeasurement) Unit() PrefixedUnit
 ```
+get unit with prefix
 
 #### type Density
 
@@ -213,12 +237,14 @@ type Density struct {
 }
 ```
 
+a structure which defines a density
 
 #### func  NewDensity
 
 ```go
 func NewDensity(v float64, unit string) Density
 ```
+make a new density structure in SI units
 
 #### type Energy
 
@@ -228,14 +254,14 @@ type Energy struct {
 }
 ```
 
-I suspect we may need to deal with the dimensional question at some stage this
-is really Mass(Length/Time)^2
+this is really Mass(Length/Time)^2
 
 #### func  NewEnergy
 
 ```go
 func NewEnergy(v float64, unit string) Energy
 ```
+make a new energy unit
 
 #### type Force
 
@@ -245,6 +271,7 @@ type Force struct {
 }
 ```
 
+a Force
 
 #### func  NewForce
 
@@ -262,18 +289,22 @@ type GenericPrefixedUnit struct {
 }
 ```
 
+the generic prefixed unit structure
 
 #### func (*GenericPrefixedUnit) BaseSIConversionFactor
 
 ```go
 func (gpu *GenericPrefixedUnit) BaseSIConversionFactor() float64
 ```
+multiplier to convert to SI base unit... for composites this is the ratio of the
+base units for the dimensions in question e.g. kg/l for concentration
 
 #### func (*GenericPrefixedUnit) BaseSISymbol
 
 ```go
 func (gpu *GenericPrefixedUnit) BaseSISymbol() string
 ```
+symbol for unit after conversion to base si unit
 
 #### func (*GenericPrefixedUnit) Prefix
 
@@ -286,18 +317,21 @@ func (gpu *GenericPrefixedUnit) Prefix() SIPrefix
 ```go
 func (gpu *GenericPrefixedUnit) PrefixedSymbol() string
 ```
+symbol with prefix
 
 #### func (*GenericPrefixedUnit) RawSymbol
 
 ```go
 func (gpu *GenericPrefixedUnit) RawSymbol() string
 ```
+symbol without prefix
 
 #### func (*GenericPrefixedUnit) Symbol
 
 ```go
 func (gpu *GenericPrefixedUnit) Symbol() string
 ```
+symbol with prefix
 
 #### type GenericUnit
 
@@ -310,12 +344,14 @@ type GenericUnit struct {
 }
 ```
 
+structure for defining a generic unit
 
 #### func  UnitBySymbol
 
 ```go
 func UnitBySymbol(sym string) GenericUnit
 ```
+look up unit by symbol
 
 #### func (*GenericUnit) BaseSIConversionFactor
 
@@ -356,6 +392,7 @@ length
 ```go
 func NewLength(v float64, unit string) Length
 ```
+make a length
 
 #### type Mass
 
@@ -372,12 +409,14 @@ mass
 ```go
 func NewMass(v float64, unit string) Mass
 ```
+make a mass unit
 
 #### func (*Mass) Quantity
 
 ```go
 func (m *Mass) Quantity() Measurement
 ```
+defines mass to be a SubstanceQuantity
 
 #### type Measurement
 
@@ -395,6 +434,7 @@ type Measurement interface {
 }
 ```
 
+fundamental representation of a value in the system
 
 #### type MeasurementLimits
 
@@ -415,6 +455,7 @@ type NDManifold struct {
 }
 ```
 
+N-dimensional manifold structure
 
 #### type PrefixedUnit
 
@@ -432,12 +473,14 @@ type PrefixedUnit interface {
 }
 ```
 
+a unit with an SI prefix
 
 #### func  NewPrefixedUnit
 
 ```go
 func NewPrefixedUnit(prefix string, unit string) PrefixedUnit
 ```
+helper function to make it easier to make a new unit with prefix directly
 
 #### type Pressure
 
@@ -447,6 +490,7 @@ type Pressure struct {
 }
 ```
 
+a Pressure structure
 
 #### func  NewPressure
 
@@ -466,12 +510,14 @@ type SIPrefix struct {
 }
 ```
 
+structure defining an SI prefix
 
 #### func  SIPrefixBySymbol
 
 ```go
 func SIPrefixBySymbol(symbol string) SIPrefix
 ```
+helper function to allow lookup of prefix
 
 #### type SpecificHeatCapacity
 
@@ -481,12 +527,14 @@ type SpecificHeatCapacity struct {
 }
 ```
 
+a structure which defines a specific heat capacity
 
 #### func  NewSpecificHeatCapacity
 
 ```go
 func NewSpecificHeatCapacity(v float64, unit string) SpecificHeatCapacity
 ```
+make a new specific heat capacity structure in SI units
 
 #### type SubstanceQuantity
 
@@ -513,6 +561,7 @@ temperature
 ```go
 func NewTemperature(v float64, unit string) Temperature
 ```
+make a temperature
 
 #### type Time
 
@@ -529,6 +578,7 @@ time
 ```go
 func NewTime(v float64, unit string) Time
 ```
+make a time unit
 
 #### type Volume
 
@@ -545,3 +595,4 @@ volume -- strictly speaking of course this is length^3
 ```go
 func NewVolume(v float64, unit string) Volume
 ```
+make a volume

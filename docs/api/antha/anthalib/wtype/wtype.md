@@ -26,12 +26,14 @@ map of matter types
 ```go
 func GetMatterLib(fn string) (*(map[string]GenericMatter), error)
 ```
+deserializes matter library from a JSON map structure
 
 #### func  MakeMatterLib
 
 ```go
 func MakeMatterLib() map[string]GenericMatter
 ```
+make the initial matter library. This will eventually be deprecated.
 
 #### func  NewLiquid
 
@@ -47,6 +49,8 @@ type BioSequence interface {
 }
 ```
 
+defines things which have biosequences... useful for operations valid on
+biosequences such as BLASTing / other alignment methods
 
 #### type Chiller
 
@@ -57,6 +61,7 @@ type Chiller interface {
 }
 ```
 
+device capable of decreasing the temperature
 
 #### type CompositeDevice
 
@@ -68,6 +73,8 @@ type CompositeDevice struct {
 }
 ```
 
+structure to define interface to a physical device which can perform more than
+one operation
 
 #### func (*CompositeDevice) Manufacturer
 
@@ -80,6 +87,8 @@ func (cd *CompositeDevice) Manufacturer() string
 ```go
 func (cd *CompositeDevice) Ready() bool
 ```
+the default for the whole device is to AND the Ready()s for the whole set of
+devices
 
 #### func (*CompositeDevice) Type
 
@@ -98,10 +107,12 @@ type Container interface {
 	Remove(v wunit.Volume) Physical
 	ContainerType() string
 	PartOf() *Entity
+	Empty() bool
 }
 ```
 
-defines something as being able to have contents
+defines something as being able to have contents must be a solid object but does
+not have to be an entity
 
 #### type DNA
 
@@ -112,6 +123,7 @@ type DNA struct {
 }
 ```
 
+defines something as physical DNA hence it is physical and has a DNASequence
 
 #### type DNASequence
 
@@ -121,6 +133,7 @@ type DNASequence struct {
 }
 ```
 
+DNAsequence is a type of Biosequence
 
 #### func (*DNASequence) Sequence
 
@@ -136,6 +149,7 @@ type DeSealer interface {
 }
 ```
 
+device capable of desealing labware
 
 #### type Device
 
@@ -148,6 +162,7 @@ type Device interface {
 }
 ```
 
+device interface type
 
 #### type Entity
 
@@ -172,7 +187,8 @@ type Environment struct {
 }
 ```
 
-datatype to define the surroundings
+datatype to define the surroundings it keeps track of the temperature, pressure
+and any physical components such as the gaseous composition
 
 #### type Enzyme
 
@@ -182,6 +198,8 @@ type Enzyme struct {
 }
 ```
 
+structure which defines an enzyme -- solutions containing enzymes need careful
+handling as they can be quite delicate
 
 #### type Gas
 
@@ -204,6 +222,8 @@ type GenericDevice struct {
 }
 ```
 
+Generic device structure defining the manufacturer device type and current state
+(true/false indicating "ready/not ready")
 
 #### func (*GenericDevice) Manufacturer
 
@@ -238,7 +258,7 @@ a simple structure to allow a generic entity class to be defined
 ```go
 func (ge *GenericEntity) IsEntity()
 ```
-dummy method
+dummy method required so that GenericEntity implements Entity
 
 #### type GenericLiquid
 
@@ -248,12 +268,14 @@ type GenericLiquid struct {
 }
 ```
 
+Structure which defines a generic liquid
 
 #### func  NewGenericLiquid
 
 ```go
 func NewGenericLiquid(name string, mattertype string, volume wunit.Volume) GenericLiquid
 ```
+factory method for creating a new generic liquid
 
 #### func (*GenericLiquid) Clone
 
@@ -266,6 +288,7 @@ func (gl *GenericLiquid) Clone() GenericLiquid
 ```go
 func (gl *GenericLiquid) Sample(v wunit.Volume) Liquid
 ```
+sample method for a generic liquid
 
 #### func (*GenericLiquid) Viscosity
 
@@ -284,12 +307,14 @@ type GenericMatter struct {
 }
 ```
 
+structure defining data items required for defining matter
 
 #### func  MatterByName
 
 ```go
 func MatterByName(name string) GenericMatter
 ```
+Functions for dealing with matter
 
 #### func (*GenericMatter) BoilingPoint
 
@@ -329,6 +354,7 @@ type GenericPhysical struct {
 }
 ```
 
+GenericPhysical structure: holds data items required to define a physical object
 
 #### func  NewGenericPhysical
 
@@ -407,6 +433,7 @@ type GenericSBSFormatPlate struct {
 }
 ```
 
+A generic to define an SBS format plate
 
 #### func (*GenericSBSFormatPlate) Add
 
@@ -420,6 +447,7 @@ find the first empty well and add this to it
 ```go
 func (gl *GenericSBSFormatPlate) FirstEmptyWell() Well
 ```
+find the first empty well in the plate
 
 #### func (*GenericSBSFormatPlate) LabwareType
 
@@ -459,6 +487,7 @@ type GenericSolid struct {
 }
 ```
 
+defines a generic solid structure
 
 #### func (*GenericSolid) Shape
 
@@ -478,6 +507,7 @@ type GenericWell struct {
 }
 ```
 
+structure defining data items required for a well
 
 #### func (*GenericWell) Add
 
@@ -503,6 +533,12 @@ func (gw *GenericWell) ContainerVolume() wunit.Volume
 func (gw *GenericWell) Contents() []Physical
 ```
 
+#### func (*GenericWell) Empty
+
+```go
+func (gw *GenericWell) Empty() bool
+```
+
 #### func (*GenericWell) PartOf
 
 ```go
@@ -519,6 +555,7 @@ type Geometry interface {
 }
 ```
 
+interface to 3D geometry
 
 #### type Heater
 
@@ -529,6 +566,7 @@ type Heater interface {
 }
 ```
 
+device capable of increasing the temperature
 
 #### type Labware
 
@@ -540,6 +578,7 @@ type Labware interface {
 }
 ```
 
+general interface applicable to all labware
 
 #### type Layout
 
@@ -548,6 +587,7 @@ type Layout interface {
 }
 ```
 
+will hold spacial layouts on plates and provide traversals
 
 #### type Liquid
 
@@ -581,12 +621,14 @@ base type for defining materials
 type Mover interface {
 	Grab(e Entity)
 	Drop() Entity
-	MoveGripperTo(c coordinates)
+	MoveTo(c coordinates)
 	MaxWeight() wunit.Mass
 	Gripper() VariableSlot
 }
 ```
 
+something which can move Entities about should be defined as generally as
+possible
 
 #### type NonWaterSolution
 
@@ -597,6 +639,7 @@ type NonWaterSolution struct {
 }
 ```
 
+a structure defining a non water solution
 
 #### func (*NonWaterSolution) Solutes
 
@@ -618,12 +661,13 @@ type Organism struct {
 }
 ```
 
+structure which defines an organism. These need specific handling -- some detail
+is derived using the TOL structure
 
 #### type Parameter
 
 ```go
 type Parameter struct {
-	// This is simply used by the parser, it's not part of the underlying language
 	Name     string
 	Type     string
 	RangeMin string
@@ -632,6 +676,8 @@ type Parameter struct {
 }
 ```
 
+structure defining a parameter as expressed in a protocol This is simply used by
+the parser, it's not part of the underlying language
 
 #### type Physical
 
@@ -671,6 +717,7 @@ type Pipetter interface {
 }
 ```
 
+Pipetter unit
 
 #### type Plasmid
 
@@ -679,6 +726,7 @@ type Plasmid struct {
 }
 ```
 
+defines a plasmid
 
 #### type Plate
 
@@ -692,6 +740,7 @@ type Plate interface {
 }
 ```
 
+defines microplates. Microplates have wells.
 
 #### type Population
 
@@ -700,6 +749,7 @@ type Population struct {
 }
 ```
 
+a set of organisms, can be mixed or homogeneous
 
 #### type Protein
 
@@ -710,6 +760,7 @@ type Protein struct {
 }
 ```
 
+physical protein sample has a ProteinSequence
 
 #### type ProteinSequence
 
@@ -719,6 +770,7 @@ type ProteinSequence struct {
 }
 ```
 
+ProteinSequence object is a type of Biosequence
 
 #### func (*ProteinSequence) Sequence
 
@@ -735,6 +787,7 @@ type RNA struct {
 }
 ```
 
+RNA sample: physical RNA, has an RNASequence object
 
 #### type RNASequence
 
@@ -744,6 +797,7 @@ type RNASequence struct {
 }
 ```
 
+RNASequence object is a type of Biosequence
 
 #### func (*RNASequence) Sequence
 
@@ -759,6 +813,7 @@ type Sealed interface {
 }
 ```
 
+to be composed with an X to make a SealedX
 
 #### type Sealer
 
@@ -768,6 +823,7 @@ type Sealer interface {
 }
 ```
 
+device capable of sealing labware
 
 #### type Shape
 
@@ -790,6 +846,7 @@ type Slot interface {
 }
 ```
 
+a holder on a device which can contain labware
 
 #### type Solid
 
@@ -814,6 +871,8 @@ type Solution interface {
 }
 ```
 
+interface defining a solution type. Defined as being a liquid, having a
+concentration, a solvent and one or more solutes
 
 #### type Suspension
 
@@ -825,6 +884,8 @@ type Suspension interface {
 }
 ```
 
+interface to define a suspension type this also has a solvent and solutes but no
+concentration
 
 #### type VariableSlot
 
@@ -835,6 +896,7 @@ type VariableSlot interface {
 }
 ```
 
+a slot which can change size
 
 #### type WaterSolution
 
@@ -845,6 +907,7 @@ type WaterSolution struct {
 }
 ```
 
+a solution with water as the solvent
 
 #### func (*WaterSolution) Concentration
 
@@ -881,6 +944,7 @@ type Well interface {
 }
 ```
 
+defines a well in a microplate
 
 #### type WellCoords
 

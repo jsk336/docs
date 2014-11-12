@@ -17,23 +17,23 @@ for alignment.
 Without an explicit path, it processes the standard input. Given a file, it
 operates on that file; given a directory, it operates on all .go files in that
 directory, recursively. (Files starting with a period are ignored.) By default,
-gofmt prints the reformatted sources to standard output.
+anthamt prints the reformatted sources to standard output.
 
 Usage:
 
-    gofmt [flags] [path ...]
+    anthamt [flags] [path ...]
 
 The flags are:
 
     -d
     	Do not print reformatted sources to standard output.
-    	If a file's formatting is different than gofmt's, print diffs
+    	If a file's formatting is different than anthamt's, print diffs
     	to standard output.
     -e
     	Print all (including spurious) errors.
     -l
     	Do not print reformatted sources to standard output.
-    	If a file's formatting is different from gofmt's, print its name
+    	If a file's formatting is different from anthamt's, print its name
     	to standard output.
     -r rule
     	Apply the rewrite rule to the source before reformatting.
@@ -41,8 +41,8 @@ The flags are:
     	Try to simplify code (after applying the rewrite rule, if any).
     -w
     	Do not print reformatted sources to standard output.
-    	If a file's formatting is different from gofmt's, overwrite it
-    	with gofmt's version.
+    	If a file's formatting is different from anthamt's, overwrite it
+    	with anthamt's version.
 
 Debugging support:
 
@@ -58,38 +58,38 @@ single-character lowercase identifiers serve as wildcards matching arbitrary
 sub-expressions; those expressions will be substituted for the same identifiers
 in the replacement.
 
-When gofmt reads from standard input, it accepts either a full Go program or a
+When anthamt reads from standard input, it accepts either a full Go program or a
 program fragment. A program fragment must be a syntactically valid declaration
-list, statement list, or expression. When formatting such a fragment, gofmt
+list, statement list, or expression. When formatting such a fragment, anthamt
 preserves leading indentation as well as leading and trailing spaces, so that
 individual sections of a Go program can be formatted by piping them through
-gofmt.
+anthamt.
 
 
 ### Examples
 
 To check files for unnecessary parentheses:
 
-    gofmt -r '(a) -> a' -l *.go
+    anthamt -r '(a) -> a' -l *.go
 
 To remove the parentheses:
 
-    gofmt -r '(a) -> a' -w *.go
+    anthamt -r '(a) -> a' -w *.go
 
 To convert the package tree from explicit slice upper bounds to implicit ones:
 
-    gofmt -r 'α[β:len(α)] -> α[β:]' -w $GOROOT/src/pkg
+    anthamt -r 'α[β:len(α)] -> α[β:]' -w $GOROOT/src/pkg
 
 
 The simplify command
 
-When invoked with -s gofmt will make the following source transformations where
-possible.
+When invoked with -s anthamt will make the following source transformations
+where possible.
 
     An array, slice, or map composite literal of the form:
     	[]T{T{}, T{}}
     will be simplified to:
-    	[]T{{}, {}}
+    	[]T{ { }, { } }
 
     A slice expression of the form:
     	s[a:len(s)]
