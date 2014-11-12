@@ -108,9 +108,9 @@ Hello, Boris!
 You are a doctor.  Very impressive!
 ```
 
-## Define inports
+## Define processes and inports
 
-Every network of processes needs channels which handle inputs and outputs. A channel for inputs is an inport, a channel for outputs is an outport. A channel provides a mechanism for concurrently executing functions to communicate by sending and receiving values of a specified element type. The value of an uninitialized channel is nil.
+Every network of processes needs channels which handle inputs and outputs. A channel for inputs is an inport, a channel for outputs is an outport. A channel provides a mechanism for concurrently executing functions to communicate by sending and receiving values of a specified element type. The value of an uninitialized channel is nil. In this example, the processes are "Greeter" and "Printer." The inports and outports are defined as string channels in each process.
 
 ```go
 type Greeter struct {
@@ -162,6 +162,9 @@ type GreetingApp struct {
 }
 ```
 
+## Add the processes to the graph and connect inports to outports.
+
+```go
 func NewGreetingApp() *GreetingApp {
     n := new(GreetingApp)
     n.InitGraphState()
@@ -176,7 +179,11 @@ func NewGreetingApp() *GreetingApp {
     n.MapInPort("In3", "greeter", "Occupation")
     return n
 }
+```
 
+## Open inport channels, send data too them, and close them again. All data must be passed to the inports before closing any channels.
+
+```go
 func main() {
     net := NewGreetingApp()
 
@@ -202,3 +209,4 @@ func main() {
 
     <-net.Wait()
 }
+```
