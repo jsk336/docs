@@ -1,6 +1,6 @@
 ---
 layout: default
-type: references
+type: resources
 navgroup: community
 shortname: Community
 title: Discussion
