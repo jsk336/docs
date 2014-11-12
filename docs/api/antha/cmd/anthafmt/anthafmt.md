@@ -89,7 +89,7 @@ possible.
     An array, slice, or map composite literal of the form:
     	[]T{T{}, T{}}
     will be simplified to:
-    	[]T{{}, {}}
+    	[]T{ { }, { } }
 
     A slice expression of the form:
     	s[a:len(s)]
