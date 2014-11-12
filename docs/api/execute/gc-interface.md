@@ -1,3 +1,15 @@
+---
+layout: default
+type: api
+navgroup: execution-api
+shortname: gc-interface.md
+title: gc-interface.md
+apidocs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  package: gc-interface.md
+  description: runtime garbage collection interface
+---
 # Garbage Collector
 
 A service which holds a list of items to be recycled. 

@@ -1,3 +1,15 @@
+---
+layout: default
+type: api
+navgroup: execution-api
+shortname: logger-interface.md
+title: logger-interface.md
+apidocs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  package: logger-interface.md
+  description: the runtime interface to the logging service
+---
 # Logger
 
 The logger writes text to logs and deals with error streams

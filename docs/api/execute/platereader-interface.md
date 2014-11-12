@@ -1,3 +1,15 @@
+---
+layout: default
+type: api
+navgroup: execution-api
+shortname: platereader-interface.md
+title: platereader-interface.md
+apidocs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  package: platereader-interface.md
+  description: the runtime interface to a platereader
+---
 # Platereader
 
 Interface which defines a service for measuring absorbance, fluorescence or emittance. 

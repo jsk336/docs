@@ -1,3 +1,15 @@
+---
+layout: default
+type: api
+navgroup: execution-api
+shortname: liquidhandler-interface.md
+title: liquidhandler-interface.md
+apidocs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  package: liquidhandler-interface.md
+  description: the interface and communication structures for liquid handling requests
+---
 # Liquid Handler
 
 The liquid handler provides a unified, logical interface to define liquid handling requests. 

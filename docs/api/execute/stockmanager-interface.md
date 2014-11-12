@@ -1,3 +1,15 @@
+---
+layout: default
+type: api
+navgroup: execution-api
+shortname: stockmanager-interface.md
+title: stockmanager-interface.md
+apidocs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  package: stockmanager-interface.md
+  description: the runtime interface to the stock manager
+---
 # Stock Manager Interface
 
 The stock manager maintains information on what stocks are locally available.

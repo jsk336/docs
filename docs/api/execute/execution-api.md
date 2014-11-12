@@ -1,3 +1,14 @@
+---
+layout: default
+type: api
+navgroup: execution-api
+shortname: execution-api.md
+title: execution-api.md
+apidocs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  package: execution-api.md
+---
 # Execution API page
 
 The execution context structure is globally accessible and allows all services a channel by which they can talk to other services. 
