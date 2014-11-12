@@ -7,7 +7,7 @@ title: Unit Testing in Antha
 ---
 {% include toc.html %}
 
-##Unit Testing and Quality
+## Unit Testing and Quality
 
 One of the key goals for Antha is to facilitate the development of quality protocols
 which can be validated against particular standard outputs to determine whether they
@@ -29,7 +29,7 @@ There is a strong similarity between these concepts and the kinds of quality con
 procedures which are usually adopted for clinical assays. While there are some domain
 differences the basic idea of determining the limits of validity of a process is very similar.
 
-##Unit Tests For Antha Protocols
+## Unit Tests For Antha Protocols
 
 The Antha language defines unit tests using the validation section, which is a standard
 part of any protocol. The intention of this is for the protocol to be tested against

@@ -13,9 +13,7 @@ docs:
 {% include toc.html %}
 
 
-need text here
-=======
-#Characterization
+# Characterization
 
 Good practice in computer science, biological science research and engineering requires validation which ensures what is executed meets pre-defined approval criteria. Antha will aim to have this capacity built-in. 
 In computer science validation is data based and can thus be applied robustly, quickly and scalably but when physical samples are generated in biological experiments the validation overhead is significantly higher. 
@@ -23,13 +21,13 @@ The pharmaceutical sector is the second most regulated industry on earth (can yo
 In recent years, Validation in Pharma has moved from a model of “find a way that works and stick precisely to that exact process” (quality by QC) to a model of “understand what aspects of your process does and what does not affect the quality of your product”. The latter is termed quality by design. 
 
 
-##Quality by design
+## Quality by design
 
-###Definition 
+### Definition 
 
 “QbD became the answer to assisting both the industry and FDA to move toward a more scientific, risk-based, holistic and proactive approach to pharmaceutical development. The concept promotes industry's understanding of the product and manufacturing process starting with product development, basically building quality in, not testing it. Under the concept of QbD, when designing and developing a product, a company needs to define desired product performance and identify CQAs. On the basis of this information, the company then designs the product formulation and process to meet those product attributes. This leads to understanding the impact of raw material attributes and process parameters on the CQAs and identification and control of sources of variability. As a result of all this knowledge, a company can continually monitor and update its manufacturing process to assure consistent product quality. This systematic approach to product development and manufacturing varies a great deal from the traditional approach, which was extremely empirical.” ([Quality by design for biopharmaceuticals](http://www.nature.com/nbt/journal/v27/n1/full/nbt0109-26.html), Anurag S Rathore & Helen Winkle)
 
-###QbD implementaion
+### QbD implementaion
 1. FMEA  → 2. DOE → 3. Design space definition.
 
 1.	“Failure mode and effects analysis (FMEA) is commonly used to assess the potential degree of risk for every operating parameter in a systematic manner and to prioritize the activities, such as experiments, necessary to understand the impact of these parameters on overall process performance” ([Quality by design for biopharmaceuticals](http://www.nature.com/nbt/journal/v27/n1/full/nbt0109-26.html), Anurag S Rathore & Helen Winkle)
@@ -37,7 +35,7 @@ In recent years, Validation in Pharma has moved from a model of “find a way th
 3.	From the understanding gained through DOE, a Design space can be defined in which robust performance can be ensured.
 If this approach were applied routinely to characterizing genetic parts in synthetic biology then parts could be chosen based on windows of overlapping design space and performing experiments and building genetic devices would certainly be more likely to be robust, rugged and reproducible.
 
-##How Antha will do this
+## How Antha will do this
 This process sounds highly specialized and a lot of upfront work, and it is. But don’t worry because Antha is designed to support the parts characterisation automatically. This (insert techy stuff) explains how
 
 
