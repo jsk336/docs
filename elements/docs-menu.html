@@ -33,7 +33,7 @@
         <core-item label="Concurrency"><a href="/docs/concepts/concurrency.html"></a></core-item>
       	<core-item label="Characterization"><a href="/docs/concepts/characterization.html"></a></core-item>
     </core-submenu>
-    <core-submenu id="paperelements" src="/images/logos/a-icon-black-24.svg" label="Implement (TODO: CHANGE NAME)"
+    <core-submenu id="paperelements" src="/images/logos/a-icon-black-24.svg" label="How Antha Works"
                   class="elements-using" hidden?="{{menu != 'docs'}}">
       	<core-item label="Data Model"><a href="/docs/implement/data.html"></a></core-item>
       	<core-item label="Device Control"><a href="/docs/implement/devices.html"></a></core-item>
@@ -49,35 +49,9 @@
         <core-item label="Pure Data"><a href="/docs/examples/promoter.html"></a></core-item>
         <core-item label="Material Programming"><a href="/docs/examples/bradford.html"></a></core-item>
       </core-submenu>
-      <core-item label="Docs"><a href="/docs/index.html"></a></core-item>
     </core-submenu>
-
-    <core-submenu id="coremenu" label="Polymer" src="/images/logos/a-icon-black-24.svg" class="elements-creating" hidden?="{{menu != 'docs'}}">
-      <core-item label="API developer guide"><a href="/docs/polymer/polymer.html"></a></core-item>
-      <core-submenu label="Data binding &#x25BE;">
-        <core-item label="Overview"><a href="/docs/polymer/databinding.html"></a></core-item>
-        <core-item label="Types of bindings"><a href="/docs/polymer/binding-types.html"></a></core-item>
-        <core-item label="Expressions"><a href="/docs/polymer/expressions.html"></a></core-item>
-        <core-item label="Compatibility notes"><a href="/docs/polymer/databinding-compat.html"></a></core-item>
-        <core-item label="Advanced topics"><a href="/docs/polymer/databinding-advanced.html"></a></core-item>
-        <core-submenu label="Related libraries &#x25BE;">
-          <core-item label="Template Binding"><a href="/docs/polymer/template.html"></a></core-item>
-          <core-item label="Node.bind()"><a href="/docs/polymer/node_bind.html"></a></core-item>
-        </core-submenu>
-      </core-submenu>
-      <core-item label="Polymer helper methods"><a href="/docs/polymer/helpers.html"></a></core-item>
-      <core-item label="Layout attributes"><a href="/docs/polymer/layout-attrs.html"></a></core-item>
-      <core-item label="Styling elements"><a href="/docs/polymer/styling.html"></a></core-item>
-      <core-item label="Touch &amp; gestures"><a href="/docs/polymer/touch.html"></a></core-item>
-      <core-item label="Debugging tips and tricks"><a href="/docs/polymer/debugging.html"></a></core-item>
-      <core-item label="Runtime configuration"><a href="/docs/polymer/runtime-config.html"></a></core-item>
-    </core-submenu>
-    <core-submenu id="platformmenu" label="Platform" class="platform" hidden?="{{menu != 'docs'}}" src="/images/logos/a-icon-black-24.svg">
-      <core-item label="Custom Elements"><a href="/platform/custom-elements.html"></a></core-item>
-      <core-item label="Shadow DOM"><a href="/platform/shadow-dom.html"></a></core-item>
-      <core-item label="HTML Imports"><a href="/platform/html-imports.html"></a></core-item>
-      <core-item label="Web Animations"><a href="/platform/web-animations.html"></a></core-item>
-    </core-submenu>
+    <core-item label="Docs" src="/images/logos/a-icon-black-24.svg" hidden?="{{menu != 'start'}}"><a href="/docs/index.html"></a></core-item>
+	
     <core-item id="articles" label="Articles" icon="av:news" hidden?="{{menu && menu != 'docs' && menu != 'other'}}">
       <a href="/articles/"></a>
     </core-item>
