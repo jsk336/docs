@@ -31,7 +31,7 @@ cp -R js/bower_components/native-promise-only/ components/native-promise-only
 
 echo "=== Updating webcomponent.js ==="
 cd components/webcomponentsjs/
-npm install
+sudo npm install
 gulp build
 cp dist/webcomponents.min.js ../../js/
 cd ../../

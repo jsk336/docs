@@ -1,4 +1,16 @@
-#Design goals of Antha
+---
+layout: default
+type: concepts
+navgroup: docs
+shortname: Goals
+title: Design Goals of Antha
+docs:
+  published: 2014-11-14
+  antha_version: 0.0.1
+  description: The summary of the core principles that have driven the design of Antha.
+
+---
+{% include toc.html %}
 
 The guiding philosophy of Antha is to bring the benefits of modern programming 
 practice to the practice of biological experimentation. There are many innovations
@@ -7,7 +19,7 @@ experimenters but which would bring enormous gains in productivity.
 
 The Antha language has therefore been designed with the following princples in mind: 
 
-##Emphasise Readability
+## Emphasise Readability ##
 
 A core purpose of the Antha system is to establish a *de facto* standard language for 
 defining protocols and parts for use in biological experimentation. Therefore it is 
@@ -27,7 +39,7 @@ permits the use of version control systems to track how protocols evolve and cha
 time and identify which changes are responsible for particular behaviour and avoid repeating
 mistakes. 
 
-##Concurrency Is Central
+## Concurrency Is Central ##
 
 Biology is complicated. The number of experiments required to characterise and define 
 even simple systems robustly can easily amount to hundreds. The way Antha defines protocols
@@ -41,7 +53,7 @@ can then determine which currently running protocols have similar requirements a
 efficiency by running them together. This allows automated systems to be used with maximum 
 efficiency.
 
-##Define **What** Not **How**
+## Define **What** Not **How** ##
 
 Typical biological protocols are full of implementation details and it takes a great deal of
 expertise on the part of the user to know which steps are critical and which could be done
@@ -60,7 +72,7 @@ Secondly by recording protocols in a standard, executable form and tracking ever
 once protocols are created they can be used again and again without needing to know anything but
 how Antha will interpret the protocol. 
 
-##Facilitate Quality
+## Facilitate Quality ##
 
 Software design has benefitted hugely from the advent of test-driven and behaviour-driven design
 approaches. Best practice in software design emphasises development of code as comprising multiple 
@@ -75,13 +87,13 @@ For testing, Antha defines a Validation section whose aim is to provide a series
 protocol must pass to be defined as having succeeded. That way users can know if a particular step
 is a problem and protocols which repeatedly fail validation tests can be marked as unsafe. 
 
-##Record Everything
+## Record Everything ##
 
 It's easy to forget small steps in protocols and painful to have to write everything down afterwards. 
 Antha is designed to track all operations and specific inputs on samples automatically, saving 
 time and sanity while facilitating quality.
 
-##Catch Mistakes Early
+## Catch Mistakes Early ##
 
 Antha makes use of the idea of strong variable typing to help ensure that protocols make sense, 
 particularly when linked together. That means you can't tell a liquid handler to pipette 4g of

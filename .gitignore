@@ -9,3 +9,6 @@ _site
 *.vulcanized.html
 *.vulcanized.js
 *.sublime-*
+images/icons/Thumbs.db
+images/logos/Thumbs.db
+images/Thumbs.db

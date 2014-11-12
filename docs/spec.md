@@ -1,7 +1,7 @@
 ---
 layout: default
 type: start
-navgroup: docs
+navgroup: start
 shortname: Spec
 title: The Antha Language Specification
 ---

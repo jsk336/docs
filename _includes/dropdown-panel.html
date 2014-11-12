@@ -1,14 +1,11 @@
 <dropdown-panel>
-  <core-item icon="book" label="Learn" {% if page.navgroup == 'docs' %}active{% endif %}>
-    <a href="/docs/start/tutorial/intro.html"></a>
+  <core-item icon="book" label="Start" {% if page.navgroup == 'start' %}active{% endif %}>
+    <a href="/docs/intro.html"></a>
   </core-item>
-  <core-item icon="drive-document" label="Build" {% if page.navgroup == 'elements' %}active{% endif %}>
-    <a href="/docs/elements/"></a>
+  <core-item icon="drive-document" label="Docs" {% if page.navgroup == 'docs' %}active{% endif %}>
+    <a href="/docs/index.html"></a>
   </core-item>
   <core-item icon="list" label="Resources" {% if page.navgroup == 'resources' %}active{% endif %}>
     <a href="/resources/faq.html"></a>
-  </core-item>
-  <core-item icon="view-headline" label="Blog">
-    <a href="//blog.antha-lang.org" target="_blank"></a>
   </core-item>
 </dropdown-panel>

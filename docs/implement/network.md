@@ -1,3 +1,12 @@
+---
+layout: default
+type: implement
+navgroup: docs
+shortname: network
+title: The Network Communcations Model of Antha
+---
+{% include toc.html %}
+
 Network development is a key component to Flow Based Programming (FBP).  These networks are created in Antha by opening processes and directing channels to them.  The following text describes the syntax needed to do so.
 
 Consider the following script. This program reads names, titles, and occupations and prints greetings based on those inputs.  It does so by creating a network of two processes: one which reads strings and produces greetings, a second which takes those greetings and prints them to the console. This program is a modified version of an example script created by V. Sibirov (https://github.com/trustmaster/goflow)
