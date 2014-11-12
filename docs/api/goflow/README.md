@@ -1,6 +1,6 @@
 # GoFlow - Dataflow and Flow-based programming library for Go (golang)
 
-This is quite a minimalistic implementation of [Flow-based programming](http://en.wikipedia.org/wiki/Flow-based_programming) and several other concurrent models in Go programming language that aims at designing applications as graphs of components which react to data that flows through the graph.
+This is quite a minimalistic implementation of [Flow-based programming](http://en.wikipedia.org/wiki/Flow-based_programming) and several other concurrent models in Go programming language that aims at designing applications as graphs of components which react to data that flows through the graph. This model is a modified version of the goflow language created by [V. Sibirov](https://github.com/trustmaster/goflow) but it allows for multiple channels to be opened over a single process.
 
 The main properties of the proposed model are:
 
@@ -28,7 +28,7 @@ import "github.com/Synthace/goflow"
 
 ## Basic Example
 
-Below there is a listing of a simple program running a network of two processes.
+Below there is a listing of a simple program running a network of two processes with four channels (three inports, one outport).  For a more detailed look at the syntax, please refer to the [network documentation](http://antha-lang.org/docs/implement/network.html)
 
 ![Greeter example diagram](http://flowbased.wdfiles.com/local--files/goflow/goflow-hello.png)
 
@@ -141,12 +141,9 @@ More terms can be found in [flowbased terms](http://flowbased.org/terms) and [FB
 Documentation for the flow package can be accessed using standard godoc tool, e.g.
 
 ```
-godoc github.com/trustmaster/goflow
+godoc github.com/Synthace/goflow
 ```
 
-## More examples
-
-* [GoChat](https://github.com/trustmaster/gochat), a simple chat in Go using this library
 
 ## Links
 
