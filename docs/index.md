@@ -1,9 +1,9 @@
 ---
 layout: default
-type: core
+type: concepts
 navgroup: docs
 shortname: Docs
-title: Articles
+title: Core Docs
 subtitle: Core concepts of how to work in Antha
 
 add_permalinks: false
@@ -13,7 +13,7 @@ add_permalinks: false
 
 {% unless p.draft %}
 
-{% if p.article %}
+{% if p.concepts %}
 
 {% assign pubdate = p.article.published | date: "%Y-%m-%d" %}
 {% assign updated = p.article.updated | date: "%Y-%m-%d" %}

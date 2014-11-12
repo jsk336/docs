@@ -1,3 +1,12 @@
+---
+layout: default
+type: implement
+navgroup: docs
+shortname: network
+title: The Network Communcations Model of Antha
+---
+{% include toc.html %}
+
 Network development is a key component to Flow Based Programming (FBP).  These networks are created in Antha by opening processes and directing channels to them.  The following text describes the syntax needed to do so.
 
 Consider the following script:

@@ -1,3 +1,12 @@
+---
+layout: default
+type: concepts
+navgroup: docs
+shortname: Types
+title: The Antha Type System
+---
+{% include toc.html %}
+
 # Variable Types
 
 ## Variables and Types in Conventional Languages
