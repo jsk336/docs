@@ -8,12 +8,10 @@ apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
   package: anthalib/liquidhandling
+  description: defines types and methods for dealing with liquid handling requests
 ---
 # liquidhandling
 --
-    import "."
-
-defines types for dealing with liquid handling requests
 
 ## Usage
 

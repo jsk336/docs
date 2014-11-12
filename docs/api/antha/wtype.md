@@ -8,11 +8,10 @@ apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
   package: anthalib/wtype
+  description: defines core physical types representing substances, devices and labware
 ---
 # wtype
 --
-    import "."
-
 
 ## Usage
 

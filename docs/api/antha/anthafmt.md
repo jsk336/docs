@@ -8,10 +8,11 @@ apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
   package: cmd/anthafmt
+  description: Anthafmt formats Antha protocols
 ---
 # anthafmt
 --
-Gofmt formats Go programs. It uses tabs (width = 8) for indentation and blanks
+Anthafmt formats Antha programs. It uses tabs (width = 8) for indentation and blanks
 for alignment.
 
 Without an explicit path, it processes the standard input. Given a file, it
@@ -53,16 +54,16 @@ The rewrite rule specified with the -r flag must be a string of the form:
 
     pattern -> replacement
 
-Both pattern and replacement must be valid Go expressions. In the pattern,
+Both pattern and replacement must be valid Antha expressions. In the pattern,
 single-character lowercase identifiers serve as wildcards matching arbitrary
 sub-expressions; those expressions will be substituted for the same identifiers
 in the replacement.
 
-When anthamt reads from standard input, it accepts either a full Go program or a
+When anthamt reads from standard input, it accepts either a full Antha program or a
 program fragment. A program fragment must be a syntactically valid declaration
 list, statement list, or expression. When formatting such a fragment, anthamt
 preserves leading indentation as well as leading and trailing spaces, so that
-individual sections of a Go program can be formatted by piping them through
+individual sections of a Antha program can be formatted by piping them through
 anthamt.
 
 

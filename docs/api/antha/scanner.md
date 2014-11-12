@@ -8,12 +8,13 @@ apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
   package: antha/scanner
+  description: Package scanner implements a scanner for Antha source text.
 ---
 # scanner
 --
     import "."
 
-Package scanner implements a scanner for Go source text. It takes a []byte as
+Package scanner implements a scanner for Antha source text. It takes a []byte as
 source which can then be tokenized through repeated calls to the Scan method.
 
 ## Usage

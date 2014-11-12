@@ -8,6 +8,7 @@ apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
   package: cmd/anthadoc
+  description: anthadoc automatically generates documentation for Antha protocols
 ---
 # anthadoc
 --

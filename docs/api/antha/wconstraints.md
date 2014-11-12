@@ -8,11 +8,10 @@ apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
   package: anthalib/wconstraints
+  description: defines a structure for expressing and implementing constraints such as time and temperature
 ---
 # wconstraints
 --
-    import "."
-
 
 ## Usage
 

@@ -8,12 +8,13 @@ apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
   package: antha/doc
+  description: anthadoc extracts source code documentation from an Antha AST
 ---
 # doc
 --
     import "."
 
-Package doc extracts source code documentation from a Go AST.
+Package doc extracts source code documentation from an Antha AST.
 
 ## Usage
 
@@ -77,7 +78,7 @@ URLs in the comment text are converted into links; if the URL also appears in
 the words map, the link is taken from the map (if the corresponding map value is
 the empty string, the URL is not converted into a link).
 
-Go identifiers that appear in the words map are italicized; if the corresponding
+Antha identifiers that appear in the words map are italicized; if the corresponding
 map value is not the empty string, it is considered a URL and the word is
 converted into a link.
 

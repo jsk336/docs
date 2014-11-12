@@ -8,12 +8,12 @@ apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
   package: antha/token
+  description: defines constants representing the lexical tokens of the Antha programming language
 ---
 # token
 --
-    import "."
 
-Package token defines constants representing the lexical tokens of the Go
+Package token defines constants representing the lexical tokens of the Antha
 programming language and basic operations on tokens (printing, predicates).
 
 ## Usage
@@ -312,7 +312,7 @@ String returns a string in one of several forms:
 type Token int
 ```
 
-Token is the set of lexical tokens of the Go programming language.
+Token is the set of lexical tokens of the Antha programming language.
 
 ```go
 const (

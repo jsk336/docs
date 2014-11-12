@@ -8,12 +8,12 @@ apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
   package: antha/build
+  description: Package build gathers information about Antha packages
 ---
 # build
 --
-    import "."
 
-Package build gathers information about Go packages.
+Package build gathers information about Antha packages.
 
 
 ### Go Path

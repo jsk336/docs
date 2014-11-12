@@ -8,14 +8,15 @@ apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
   package: antha/parser
+  description: Package parser implements a parser for Antha source files.
 ---
 # parser
 --
     import "."
 
-Package parser implements a parser for Go source files. Input may be provided in
+Package parser implements a parser for Antha source files. Input may be provided in
 a variety of forms (see the various Parse* functions); the output is an abstract
-syntax tree (AST) representing the Go source. The parser is invoked through one
+syntax tree (AST) representing the Antha source. The parser is invoked through one
 of the Parse* functions.
 
 ## Usage
@@ -51,7 +52,7 @@ error messages is the empty string.
 ```go
 func ParseFile(fset *token.FileSet, filename string, src interface{}, mode Mode) (f *ast.File, err error)
 ```
-ParseFile parses the source code of a single Go source file and returns the
+ParseFile parses the source code of a single Antha source file and returns the
 corresponding ast.File node. The source code may be provided via the filename of
 the source file, or via the src parameter.
 

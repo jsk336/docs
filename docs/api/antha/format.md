@@ -8,12 +8,13 @@ apidocs:
   published: 2014-11-14
   antha_version: 0.0.1
   package: antha/format
+  description: Package format implements standard formatting of Antha source.
 ---
 # format
 --
     import "."
 
-Package format implements standard formatting of Go source.
+Package format implements standard formatting of Antha source.
 
 ## Usage
 
@@ -39,8 +40,8 @@ formatting error, for instance due to an incorrect AST.
 func Source(src []byte) ([]byte, error)
 ```
 Source formats src in canonical gofmt style and returns the result or an (I/O or
-syntax) error. src is expected to be a syntactically correct Go source file, or
-a list of Go declarations or statements.
+syntax) error. src is expected to be a syntactically correct Antha source file, or
+a list of Antha declarations or statements.
 
 If src is a partial source file, the leading and trailing space of src is
 applied to the result (such that it has the same leading and trailing space as
