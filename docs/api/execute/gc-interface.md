@@ -4,7 +4,7 @@ type: api
 navgroup: execution-api
 shortname: gc-interface.md
 title: gc-interface.md
-apidocs:
+executeapidocs:
   published: 2014-11-14
   antha_version: 0.0.1
   package: gc-interface.md
