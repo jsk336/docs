@@ -28,7 +28,7 @@ import "github.com/Synthace/goflow"
 
 ## Basic Example
 
-Below there is a listing of a simple program running a network of two processes with four channels (three inports, one outport).  For a more detailed look at the syntax, please refer to the [network documentation](http://antha-lang.org/docs/implement/network.html)
+Below there is a listing of a simple program running a network of two processes with four channels (three inports, one outport).  For a more detailed look at the syntax, please refer to the [network documentation](http://antha-lang.org/docs/implement/network.html).
 
 ![Greeter example diagram](http://flowbased.wdfiles.com/local--files/goflow/goflow-hello.png)
 
@@ -44,16 +44,29 @@ import (
 
 // A component that generates greetings
 type Greeter struct {
-	flow.Component               // component "superclass" embedded
-	Name           <-chan string // input port
-	Res            chan<- string // output port
+    flow.Component               // component "superclass" embedded
+    Name           <-chan string // input port
+    Title          <-chan string // another input port
+    Occupation          <-chan string // another input port
+    Res            chan<- string // output port
 }
 
 // Reaction to a new name input
 func (g *Greeter) OnName(name string) {
-	greeting := fmt.Sprintf("Hello, %s!", name)
-	// send the greeting to the output port
-	g.Res <- greeting
+    greeting := fmt.Sprintf("Hello, %s!", name)
+    g.Res <- greeting
+}
+
+// Reaction to a new title input
+func (g *Greeter) OnTitle(title string) {
+    greeting := fmt.Sprintf("I shall call you %s", title)
+    g.Res <- greeting
+}
+
+// Reaction to a new occupation input
+func (g *Greeter) OnOccupation(occupation string) {
+    greeting := fmt.Sprintf("You are a %s. Very impressive!", occupation)
+    g.Res <- greeting
 }
 
 // A component that prints its input on screen
@@ -76,30 +89,49 @@ type GreetingApp struct {
 func NewGreetingApp() *GreetingApp {
 	n := new(GreetingApp) // creates the object in heap
 	n.InitGraphState()    // allocates memory for the graph
+	
 	// Add processes to the network
 	n.Add(new(Greeter), "greeter")
 	n.Add(new(Printer), "printer")
-	// Connect them with a channel
+	
+	// Connect them with a channel.
 	n.Connect("greeter", "Res", "printer", "Line")
-	// Our net has 1 inport mapped to greeter.Name
-	n.MapInPort("In", "greeter", "Name")
+	
+	// Our net has 3 inports mapped to greeter.Name
+	n.MapInPort("In1", "greeter", "Name")
+    n.MapInPort("In2", "greeter", "Title")
+    n.MapInPort("In3", "greeter", "Occupation")
 	return n
 }
 
 func main() {
 	// Create the network
 	net := NewGreetingApp()
-	// We need a channel to talk to it
-	in := make(chan string)
-	net.SetInPort("In", in)
+	
+	// We need channels to talk to it
+    name := make(chan string)
+    title := make(chan string)
+    occupation := make(chan string)
+    net.SetInPort("In1", name)
+    net.SetInPort("In2", title)
+    net.SetInPort("In3", occupation)
+	
 	// Run the net
 	flow.RunNet(net)
-	// Now we can send some names and see what happens
-	in <- "John"
-	in <- "Boris"
-	in <- "Hanna"
+	
+	// Now we can send some strings and see what happens
+    title <- "Sir"
+    name <- "John"
+    name <- "Boris"
+    title <- "Dame"
+    name <- "Hanna"
+	occupation <- "doctor"
+	
 	// Close the input to shut the network down
-	close(in)
+    close(name)
+	close(title)
+	close(occupation)
+	
 	// Wait until the app has done its job
 	<-net.Wait()
 }
