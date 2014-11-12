@@ -154,6 +154,16 @@ site-banner .logo {
   }
 }
 
+#why-antha {
+	 /deep/ core-icon {
+		width: 48px;
+		height: 48px;
+	}
+	segment {
+	      min-width: 400px;
+	    }
+}
+
 #future, #keep-in-touch {
   .panel {
     @include display-flex;
