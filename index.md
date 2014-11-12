@@ -31,64 +31,68 @@ title: Welcome to Antha
   </div>
 </section>
 
-{% comment %}
-<section id="featured">
+<section id="why-antha" class="main-bg">
   <div class="panel right">
     <summary>
-        <feature-carousel interval="5000" flex unresolved>
-        <div>
-          <a href="/components/paper-elements/demo.html#core-toolbar" target="_blank">
-            <img src="/images/sampler-paper.png">
-          </a>
-          <summary>
-            <h1>Featured: material design</h1>
-            <p>{{site.project_title}} brings an implementation of <a href="http://google.com/design/spec">material design</a> to the web. The paper elements range from controls to effects and user interaction.
-            <br><br>
-            <a href="/docs/elements/material.html">
-              <paper-button>
-                <core-icon icon="arrow-forward"></core-icon> Learn more
-              </paper-button>
-            </a>
-            </p>
-          </summary>
-        </div>
-        <div>
-          <a href="/resources/video.html">
-            <img src="/images/logos/polymer_video_thumb.jpg">
-          </a>
-          <!-- <div class="video">
-            <iframe src="https://www.youtube.com/embed/videoseries?list=PLRAVCSU_HVYu-zlRaqArF8Ytwz1jlMOIM&theme=light&controls=2" frameborder="0" allowfullscreen></iframe>
-          </div> -->
-          <summary>
-            <h1>Featured: Google I/O</h1>
-            <p>Recap everything {{site.project_title}} at Google I/O 2014. Watch sessions videos and DevByte shorts.
-            <br><br>
-            <a href="/resources/video.html">
-              <paper-button>
-                <core-icon icon="drive-video"></core-icon> Watch
-              </paper-button>
-            </a>
-            </p>
-          </summary>
-        </div>
-      </feature-carousel>
-    </summary>
+		<div layout horizontal justified>
+			<div id="grow">
+				<segment layout verticalt>
+					<h2><core-icon src="images/noun/grow.svg" class="icon-big"></core-icon> Grow</h2>
+					<p>Increase the reliability, quality, and scale of your work</p>					
+				</segment>
+		  	</div>
+			<div id="disseminate">
+				<segment layout verticalt>
+					<h2><core-icon src="images/noun/disseminate.svg" class="icon-big"></core-icon> Disseminate</h2>
+					<p>Easily share reusable device independent methods</p>					
+				</segment>
+		  	</div>
+    	</div>
+		<div layout horizontal justified>
+			<div id="automate">
+				<segment layout verticalt>
+					<h2><core-icon src="images/noun/robot.svg" class="icon-big"></core-icon> Automate</h2>
+					<p>Execute your experiments automatically using robots</p>					
+				</segment>
+		  	</div>
+			<div id="manual">
+				<segment layout verticalt>
+					<h2><core-icon src="images/noun/scientist.svg" class="icon-big"></core-icon> Manual</h2>
+					<p>Generate instructions to work by hand as well</p>					
+				</segment>
+		  	</div>
+		</div>
+		<div layout horizontal justified>
+			<div id="track">
+				<segment layout verticalt>
+					<h2><core-icon src="images/noun/data.svg" class="icon-big"></core-icon> Track</h2>
+					<p>Automatically track, validate, and your results</p>					
+				</segment>
+		  	</div>
+			<div id="open">
+				<segment layout verticalt>
+					<h2><core-icon src="images/noun/unlock.png" class="icon-big"></core-icon> Open</h2>
+					<p>Antha is Open Source, with your data in open formats</p>					
+				</segment>
+		  	</div>
+		</div>
+	</summary>
   </div>
 </section>
-{% endcomment %}
 
 <section id="composer" class="main-purple">
   <div class="panel">
     <summary style="transform: translateZ(0);">
-      <h1>Composer</h1>
-      <a href="/docs/flow-based-programming.html" target="_blank">
+      <h1>Visually Develop Workflows</h1>
+	  <br>
+      <a href="/docs/concepts/flow-based-programming.html" target="_blank">
         <img src="/images/flow-gui.png" height="300" alt="Learn More About Composition" title="Learn More About Composition">
       </a>
       <div>
         <p>
-        Composer is a visual tool for wiring workflows using {{site.project_title}}. Rapidly define and execute your experiments.
+        Composer is a web based visual tool for rapidly wiring workflows using {{site.project_title}}. Rapidly define, execute and share your experiments.
         </p>
-        <a href="/docs/flow-based-programming.html/" target="_blank">
+        <a href="/docs/concepts/flow-based-programming.html" target="_blank">
           <paper-button>
             <core-icon icon="arrow-forward"></core-icon> Learn More
           </paper-button>
