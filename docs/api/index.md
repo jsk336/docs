@@ -13,7 +13,7 @@ add_permalinks: false
 
 {% unless p.draft %}
 
-{% if p.docs %}
+{% if p.apidocs %}
 
 {::options parse_block_html="true" /}
 <div class="article">
