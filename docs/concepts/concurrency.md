@@ -11,4 +11,4 @@ docs:
 ---
 {% include toc.html %}
 
-Concurrency is hard.
+Concurrency is easy.

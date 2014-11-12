@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 ---
 layout: default
 type: concepts
