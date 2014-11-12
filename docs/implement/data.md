@@ -73,12 +73,7 @@ As a second example, we consider a 96 well plate, this is an instance of a labwa
 
 ## Using views
 
-Views provide a way of querying the database. A view is essentially just a javascript function which selects particular documents and defines how to assemble the results into some kind of output. This may be raw output or it could be a summary of a set
-of raw outputs. Views often have two components, a map function which returns a set of raw results and a reduce function which
-aggregates the raw values into a summary output. For instance the levels of all stocks of a particular type in the system could
-be produced by first searching for all stocks by type then passing the resulting records to a reduce function which simply 
-sums the available levels of each. Reduce functions can then be used on previously reduced outputs to produce further 
-transformations on the output data. 
+Views provide a way of querying the database. A view is essentially just a javascript function which selects particular documents and defines how to assemble the results into some kind of output. This may be raw output or it could be a summary of a set of raw outputs. Views often have two components, a map function which returns a set of raw results and a reduce function which aggregates the raw values into a summary output. For instance the levels of all stocks of a particular type in the system could be produced by first searching for all stocks by type then passing the resulting records to a reduce function which simply sums the available levels of each. Reduce functions can then be used on previously reduced outputs to produce further transformations on the output data. 
 
 ## Updating documents 
 
