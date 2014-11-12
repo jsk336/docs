@@ -3,12 +3,10 @@ layout: default
 type: start
 navgroup: docs
 shortname: Anatomy
-title: Anatomy of an Antha Element
+title: Functional Access to DNA Sequence
 ---
 
 {% include toc.html %}
-
-# Anatomy of an Antha Element #
 
 functional sequence here
 

@@ -53,25 +53,30 @@
     </style>
     <core-media-query query="min-width: 640px" queryMatches="{{wide}}"></core-media-query>
     <demo-tabs theme="dark" style="width:100%;" selected="{{tab}}" on-core-activate="{{tabTapped}}">
-      <demo-tab heading="{{wide ? 'Use Elements (30 sec) ➜' : 'Use ➜'}}">
+      <demo-tab heading="{{wide ? 'Use a Workflow (30 sec) ➜' : 'Use ➜'}}">
         <code-explainer>
-          <script type="text/template">[dim-start]<!-- Polyfill Web Components support for older browsers -->
-            <script src="components/webcomponentsjs/webcomponents.js">&lt;/script>[dim-end]
+          <script type="text/template">
+# Read the content of "somegenes.fasta" 
+[start-inputs]'somegenes.fasta' [start-wire]->[end-wire] SOURCE Read(ReadFile)[end-inputs] 
+OUT [start-wire]->[end-wire] IN Split(SplitStr)
 
-            <!-- Import element -->
-            [start-create]&lt;link rel="import" href="google-map.html"&gt;[end-use]
+# Rewrite the genes for your host organism and 
+# place a synthesis order
+Split() OUT [start-wire]->[end-wire] IN CodonOptimizeEColi(Gene) 
+Gene [start-wire]->[end-wire] IN OrderGene(ProviderOfChoice)
 
-            <!-- Use element -->
-            [start-use]<google-map lat="37.790" long="-122.390"></google-map>[end-create]
+# Any errors are also displayed
+Read() ERROR [start-wire]->[end-wire] IN Display()
           </script>learn
-          <h2>Using Polymer Elements</h2>
-          <div>Using Polymer elements (like all Web Components) is absurdly simple:</div>
-          <code-explainer-info sec="create" bullet="1" label="Import element">
-            Find a component and import its definition into your page using
-            an HTML Import (<code>&lt;link rel="import"&gt;</code>).
+          <h2>Using Antha Elements</h2>
+          <div>Antha Elements are used by wiring the inputs and outputs together to describe a process flow:</div>
+          <code-explainer-info sec="inputs" bullet="1" label="Bring Data from Anywhere">
+            Antha has data import Elements for common bioinformatics file formats, cloud based data stores, RDBMS, and open
+			standards such as SBOL.
           </code-explainer-info>
-          <code-explainer-info sec="use" bullet="2" label="Use the new element">
-            Once imported, custom elements become first-class HTML elements and can be used like any other.
+          <code-explainer-info sec="wire" bullet="2" label="Easily Compose Workflows">
+            Antha Elements can run locally or be distributed across multiple physical locations, including the cloud. Worry about
+			what you want to do, not how to get everything to talk to each other.
           </code-explainer-info>
         </code-explainer>
       </demo-tab>
@@ -120,22 +125,19 @@
 		          </code-explainer-info>
 		        </code-explainer>
       </demo-tab>
-      <demo-tab heading="{{wide ? 'Build an app (30 min)' : 'Tutorial' }}">
+      <demo-tab heading="{{wide ? 'Learn More (30 min)' : 'Intro' }}">
         <div class="card">
           <div layout horizontal?="{{wide}}" vertical?="{{!wide}}">
             <div class="summary" flex auto?="{{!wide}}" layout vertical>
-              <h2>Build an app</h2>
+              <h2>Learn More</h2>
               <div>
-                <p>Ready to dive deeper?  In this tutorial, you'll build a small Polymer application -- 
-                a very basic client for a social networking service<span hidden?="{{!wide}}"> like the one at right</span>.
-                It'll give you a good feel for both using pre-made Polymer elements as well as building custom
-                elements of your own.</p>
-                <a href="/docs/start/tutorial/intro.html"><paper-button raised><core-icon icon="arrow-forward"></core-icon>Go to tutorial</paper-button></a>
+                <p>Ready to dive deeper?</p>
+                <a href="/docs/intro.html"><paper-button raised><core-icon icon="arrow-forward"></core-icon>Go to tutorial</paper-button></a>
                 <p>If you'd rather keep reading, head to the Polymer docs page to dive deeper.</p> 
-                <a href="/docs/start/usingelements.html"><paper-button raised><core-icon icon="arrow-forward"></core-icon>Go to docs</paper-button></a>
+                <a href="/docs/index.html"><paper-button raised><core-icon icon="arrow-forward"></core-icon>Go to docs</paper-button></a>
               </div>
             </div>
-            <a href="/docs/start/tutorial/intro.html" layout vertical>
+            <a href="/docs/intro.html" layout vertical>
               <div class="unquote-image" hidden?="{{!wide}}" flex></div>
             </a>
           </div>
