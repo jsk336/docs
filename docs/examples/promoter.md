@@ -3,16 +3,15 @@ layout: default
 type: start
 navgroup: docs
 shortname: Anatomy
-title: Functional Access to DNA Sequence
+title: Functional Access to DNA Sequences
 ---
-
-{% include toc.html %}
 
 ## Antha models of genetic parts##
 
 As part of Antha's goal of abstracting the complexity of biology, it is able to encode genetic parts along with metadata or models of their function.  This enables biologists to think about the function of the part they are looking to incorporate, not the raw ACGTs.  Given the level of context sensitivity of genetic parts, this will ultimately allow computational expression of how genetic factors interact with each other and environmental conditions in a given host strain.
 
 ## Simple example: encoding the [Anderson promoter library](http://parts.igem.org/Promoters/Catalog/Anderson)##
+
 To exemplify the way Antha can be used to code genetic parts, we here show how the Anderson promoter library can be coded into a single script.  The script requires a desired relative promoter strength as an input, and uses a binary search to return the closest genetic sequence.  At present, and in the absence of further characterisation of these parts, the script makes no provision for how the output of these promoters may change with expression conditions.
 
 Header and script imports:
