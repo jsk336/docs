@@ -8,7 +8,7 @@ title: Welcome to Antha
     <img src="/images/logos/a-logo-color-416.svg">
     <summary>
       <h1>Coding Biology</h1>
-      <p>Antha make it easy to rapidly compose biological work flows using individually testable and composable Antha Elements.</p>
+      <p>Antha makes it easy to rapidly compose biological work flows using individually testable and reusable Antha Elements.</p>
       <a href="/docs/intro.html">
         <paper-button raised unresolved>
           <core-icon icon="archive"></core-icon> Learn More
