@@ -34,7 +34,7 @@ title: Welcome to Antha
 <section id="why-antha" class="main-bg">
   <div class="panel right">
     <summary>
-		<div layout horizontal justified>
+		<smart-flow width="800">
 			<div id="grow">
 				<segment layout vertical>
 					<h2><core-icon src="images/noun/grow.svg" class="icon-big"></core-icon> Grow</h2>
@@ -47,8 +47,8 @@ title: Welcome to Antha
 					<p>Easily share reusable device independent methods</p>					
 				</segment>
 		  	</div>
-    	</div>
-		<div layout horizontal justified>
+    	</smart-flow>
+		<smart-flow width="800">
 			<div id="automate">
 				<segment layout vertical>
 					<h2><core-icon src="images/noun/robot.svg" class="icon-big"></core-icon> Automate</h2>
@@ -61,8 +61,8 @@ title: Welcome to Antha
 					<p>Generate instructions to work by hand as well</p>					
 				</segment>
 		  	</div>
-		</div>
-		<div layout horizontal justified>
+    	</smart-flow>
+		<smart-flow width="800">
 			<div id="track">
 				<segment layout vertical>
 					<h2><core-icon src="images/noun/data.svg" class="icon-big"></core-icon> Track</h2>
@@ -75,7 +75,7 @@ title: Welcome to Antha
 					<p>Antha is Open Source, with your data in open formats</p>					
 				</segment>
 		  	</div>
-		</div>
+    	</smart-flow>
 	</summary>
   </div>
 </section>
