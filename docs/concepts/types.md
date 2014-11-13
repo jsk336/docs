@@ -172,7 +172,7 @@ only defined on matter in one of these three states (e.g. moving a solid object 
 a gripper or a liquid with a pipette)
 
 There are many additional types which define things such as biological entities (DNA,
-RNA, proteins), for more information check out the [docs](documentation link).
+RNA, proteins), for more information check out the [docs](/docs/index.html).
 
 ### Initial set of matter types
 

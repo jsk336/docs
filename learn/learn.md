@@ -30,6 +30,6 @@ There are many factors which can affect an experiment which typically wouldn't b
 <img src="/images/Antha_seedelement_sourcesofvariability" >
 
 Because of the abstraction and modularity of Antha, it can potentially be the design and processing tool for experiments carried out on any instrumentation; manually or automated. 
-The built-in scheduler will figure out the most practical and robust strategy for executing the experiment so the experimenter can focus on what they want to do rather than how they do it. 
+The scheduler will figure out the most practical and robust strategy for executing the experiment so the experimenter can focus on what they want to do rather than how they do it. 
 
 

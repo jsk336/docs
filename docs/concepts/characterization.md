@@ -38,8 +38,3 @@ FMEA  → DoE → Design space definition.
 
 If this approach were applied routinely to characterizing genetic parts in synthetic biology then parts could be chosen based on windows of overlapping design space and performing experiments and building genetic devices would certainly be more likely to be robust, rugged and reproducible.
 
-## How Antha will do this
-This process sounds highly specialized and a lot of upfront work, and it is. But don’t worry because Antha is designed to support the parts characterisation automatically. This (insert techy stuff) explains how
-
-
->>>>>>> Stashed changes
