@@ -36,16 +36,20 @@ title: Welcome to Antha
     <summary>
 		<smart-flow width="800">
 			<div id="grow">
-				<segment layout vertical>
-					<h2><core-icon src="images/noun/grow.svg" class="icon-big"></core-icon> Grow</h2>
-					<p>Increase the reliability, quality, and scale of your work</p>					
-				</segment>
+				<smart-flow width="400">
+					<segment layout vertical>
+						<h2><core-icon src="images/noun/grow.svg" class="icon-big"></core-icon> Grow</h2>
+						<p>Increase the reliability, quality, and scale of your work</p>					
+					</segment>
+				</smart-flow>
 		  	</div>
 			<div id="disseminate">
-				<segment layout vertical>
-					<h2><core-icon src="images/noun/disseminate.svg" class="icon-big"></core-icon> Disseminate</h2>
-					<p>Easily share reusable device independent methods</p>					
-				</segment>
+				<smart-flow width="400">
+					<segment layout vertical>
+						<h2><core-icon src="images/noun/disseminate.svg" class="icon-big"></core-icon> Disseminate</h2>
+						<p>Easily share reusable device independent methods</p>					
+					</segment>
+				</smart-flow>
 		  	</div>
     	</smart-flow>
 		<smart-flow width="800">
