@@ -92,7 +92,9 @@ var collection andersonCollection = andersonCollection{
 	{Seq: "ttgacagctagctcagtcctagggattgtgctagc", Str: 0.56},
 }
 ```
-...then does a binary search to find your ideal match.  It's like a dating site, just for small stretches of DNA instead of eligible humans. 
+
+...then does a binary search to find your ideal match.  It's like a dating site, just for small stretches of DNA instead of eligible humans.
+
 ```go
 // Utility function to support golang sort
 func (slice andersonCollection) Len() int {
