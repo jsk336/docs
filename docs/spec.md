@@ -17,7 +17,6 @@ support for concurrent programming.  Programs are constructed from
 <i>packages</i>, whose properties allow efficient management of
 dependencies. The existing implementations use a traditional
 compile/link model to generate executable binaries.
-</p>
 
 <p>
 The grammar is compact and regular, allowing for easy analysis by
