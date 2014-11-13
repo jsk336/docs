@@ -9,16 +9,16 @@ title: Welcome to Antha
     <summary>
       <h1>Coding Biology</h1>
       <p>Antha makes it easy to rapidly compose biological work flows using individually testable and reusable Antha Elements.</p>
-      <a href="/docs/intro.html">
-        <paper-button raised unresolved>
+      <paper-button raised unresolved>
+        <a href="/docs/intro.html">
           <core-icon icon="archive"></core-icon> Learn More
-        </paper-button>
-      </a>
-      <a href="https://github.com/Synthace/antha">
-        <paper-button class="github" unresolved>
+      	</a>
+      </paper-button>
+      <paper-button class="github" unresolved>
+      	<a href="https://github.com/Synthace/antha">
           <core-icon icon="social:post-github"></core-icon> View on Github
-        </paper-button>
-      </a>
+      	</a>
+      </paper-button>
     </summary>
   </div>
 </section>
@@ -122,19 +122,19 @@ title: Welcome to Antha
 	  <div layout horizontal justified>
 		  <div></div>
 		  <div>
-	  		<a href="https://groups.google.com/a/antha-lang.org/group/antha-dev/boxsubscribe">
-		  	  	<paper-button raised>
+		  	<paper-button raised>
+	  			<a href="https://groups.google.com/a/antha-lang.org/group/antha-dev/boxsubscribe">
 		  			<core-icon icon="mail"></core-icon> Keep in Touch
-				</paper-button>
-			</a>
+				</a>
+			</paper-button>
 		  </div>
 		  <div></div>
 		  <div>	
-      		<a href="/docs/intro.html">
-        		<paper-button raised>
+        	<paper-button raised>
+      			<a href="/docs/intro.html">
           	  		<core-icon icon="arrow-forward"></core-icon> Learn more
-        		</paper-button>
-      	  	</a>
+      	  		</a>
+        	</paper-button>
 		  </div>
 		  <div></div>
     </summary>
