@@ -222,7 +222,7 @@ well in a standard microplate is not an entity since it cannot be detached from 
 
 ## Summary
 
-This has been a very brief tour of the typing system. For more information please consult [the documentation](the documentation)
+This has been a very brief tour of the typing system. For more information please consult [the documentation](/docs/index.html)
 
 
 
