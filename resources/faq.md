@@ -16,7 +16,7 @@ title: FAQ
 
 ### Why should I care about this project? {#why}
 
-{{site.project_title}} is the first high level language designed to enable robust, reproducible and composible work in the biosciences. {{site.project_title}} is designed to take away much of the detail of experimental planning, allowing biologists to focus on what they want to do, not how to do it.  This allows researchers to think about the biology of their system, and successfully carry out ever more complex and illuminating experiments.
+{{site.project_title}} is the first high level language designed to enable robust, reproducible and composable work in the biosciences. {{site.project_title}} is designed to take away much of the detail of experimental planning, allowing biologists to focus on what they want to do, not how to do it.  This allows researchers to think about the biology of their system, and successfully carry out ever more complex and illuminating experiments.
 
 ### Why do we need a high level language for doing biology? {#why}
 
