@@ -36,7 +36,7 @@ title: Welcome to Antha
     <summary>
 		<smart-flow width="800">
 			<div id="grow">
-				<smart-flow width="400">
+				<smart-flow width="100">
 					<segment layout vertical>
 						<h2><core-icon src="images/noun/grow.svg" class="icon-big"></core-icon> Grow</h2>
 						<p>Increase the reliability, quality, and scale of your work</p>					
@@ -44,7 +44,7 @@ title: Welcome to Antha
 				</smart-flow>
 		  	</div>
 			<div id="disseminate">
-				<smart-flow width="400">
+				<smart-flow width="100">
 					<segment layout vertical>
 						<h2><core-icon src="images/noun/disseminate.svg" class="icon-big"></core-icon> Disseminate</h2>
 						<p>Easily share reusable device independent methods</p>					
@@ -54,30 +54,38 @@ title: Welcome to Antha
     	</smart-flow>
 		<smart-flow width="800">
 			<div id="automate">
-				<segment layout vertical>
-					<h2><core-icon src="images/noun/robot.svg" class="icon-big"></core-icon> Automate</h2>
-					<p>Execute your experiments automatically using robots</p>					
-				</segment>
+				<smart-flow width="100">
+					<segment layout vertical>
+						<h2><core-icon src="images/noun/robot.svg" class="icon-big"></core-icon> Automate</h2>
+						<p>Execute your experiments automatically using robots</p>					
+					</segment>
+				</smart-flow>
 		  	</div>
 			<div id="manual">
-				<segment layout vertical>
-					<h2><core-icon src="images/noun/scientist.svg" class="icon-big"></core-icon> Integrate</h2>
-					<p>Generate instructions to work by hand as well</p>					
-				</segment>
+				<smart-flow width="100">
+					<segment layout vertical>
+						<h2><core-icon src="images/noun/scientist.svg" class="icon-big"></core-icon> Integrate</h2>
+						<p>Generate instructions to work by hand as well</p>					
+					</segment>
+				</smart-flow>
 		  	</div>
     	</smart-flow>
 		<smart-flow width="800">
 			<div id="track">
-				<segment layout vertical>
-					<h2><core-icon src="images/noun/data.svg" class="icon-big"></core-icon> Track</h2>
-					<p>Automatically track and validate your results</p>					
-				</segment>
+				<smart-flow width="100">
+					<segment layout vertical>
+						<h2><core-icon src="images/noun/data.svg" class="icon-big"></core-icon> Track</h2>
+						<p>Automatically track and validate your results</p>					
+					</segment>
+				</smart-flow>
 		  	</div>
 			<div id="open">
-				<segment layout vertical>
-					<h2><core-icon src="images/noun/unlock.png" class="icon-big"></core-icon> Open</h2>
-					<p>Antha is Open Source, with your data in open formats</p>					
-				</segment>
+				<smart-flow width="100">
+					<segment layout vertical>
+						<h2><core-icon src="images/noun/unlock.png" class="icon-big"></core-icon> Open</h2>
+						<p>Antha is Open Source, with your data in open formats</p>					
+					</segment>
+				</smart-flow>
 		  	</div>
     	</smart-flow>
 	</summary>
