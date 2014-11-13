@@ -9,16 +9,16 @@ title: Welcome to Antha
     <summary>
       <h1>Coding Biology</h1>
       <p>Antha makes it easy to rapidly compose biological work flows using individually testable and reusable Antha Elements.</p>
-        <paper-button raised unresolved>
       <a href="/docs/intro.html">
+        <paper-button raised unresolved>
           <core-icon icon="archive"></core-icon> Learn More
-      </a>
         </paper-button>
-        <paper-button class="github" unresolved>
+      </a>
       <a href="https://github.com/Synthace/antha">
+        <paper-button class="github" unresolved>
           <core-icon icon="social:post-github"></core-icon> View on Github
-      </a>
         </paper-button>
+      </a>
     </summary>
   </div>
 </section>
@@ -41,7 +41,6 @@ title: Welcome to Antha
 					<p>Increase the reliability, quality, and scale of your work</p>					
 				</segment>
 		  	</div>
-			<div class="clearfix"></div>
 			<div id="disseminate">
 				<segment layout verticalt>
 					<h2><core-icon src="images/noun/disseminate.svg" class="icon-big"></core-icon> Disseminate</h2>
@@ -56,11 +55,10 @@ title: Welcome to Antha
 					<p>Execute your experiments automatically using robots</p>					
 				</segment>
 		  	</div>
-			<div class="clearfix"></div>
 			<div id="manual">
 				<segment layout verticalt>
-					<h2><core-icon src="images/noun/scientist.svg" class="icon-big"></core-icon> Integrate</h2>
-					<p>Generate hand instructions to supplement your automation</p>					
+					<h2><core-icon src="images/noun/scientist.svg" class="icon-big"></core-icon> Manual</h2>
+					<p>Generate instructions to work by hand as well</p>					
 				</segment>
 		  	</div>
 		</div>
@@ -71,7 +69,6 @@ title: Welcome to Antha
 					<p>Automatically track and validate your results</p>					
 				</segment>
 		  	</div>
-			<div class="clearfix"></div>
 			<div id="open">
 				<segment layout verticalt>
 					<h2><core-icon src="images/noun/unlock.png" class="icon-big"></core-icon> Open</h2>
@@ -95,11 +92,11 @@ title: Welcome to Antha
         <p>
         Composer is a web based visual tool for rapidly wiring workflows using {{site.project_title}}. Rapidly define, execute and share your experiments.
         </p>
-          <paper-button>
         <a href="/docs/concepts/flow-based-programming.html" target="_blank">
+          <paper-button>
             <core-icon icon="arrow-forward"></core-icon> Learn More
-        </a>
           </paper-button>
+        </a>
       </div>
     </summary>
   </div>
@@ -113,19 +110,19 @@ title: Welcome to Antha
 	  <div layout horizontal justified>
 		  <div></div>
 		  <div>
-		  	  	<paper-button raised>
 	  		<a href="https://groups.google.com/a/antha-lang.org/group/antha-dev/boxsubscribe">
+		  	  	<paper-button raised>
 		  			<core-icon icon="mail"></core-icon> Keep in Touch
-			</a>
 				</paper-button>
+			</a>
 		  </div>
 		  <div></div>
 		  <div>	
-        		<paper-button raised>
       		<a href="/docs/intro.html">
+        		<paper-button raised>
           	  		<core-icon icon="arrow-forward"></core-icon> Learn more
-      	  	</a>
         		</paper-button>
+      	  	</a>
 		  </div>
 		  <div></div>
     </summary>
