@@ -47,8 +47,8 @@ Setup {
 	sort.Sort(collection)
 }
 ```
-Right, now lets get to the heart of the issue- the Steps section defines what the element actually does.  In this case
-
+Right, now lets get to the heart of the issue- the Steps section defines what the element actually does.  In this case it defines the collection...
+```go
 Steps {
 	seq := collection.GetClosest(PromotorStrength)
 	PromoterSequence = seq.Seq
@@ -84,7 +84,9 @@ var collection andersonCollection = andersonCollection{
 	{Seq: "ttgacagctagctcagtcctagggactatgctagc", Str: 0.06},
 	{Seq: "ttgacagctagctcagtcctagggattgtgctagc", Str: 0.56},
 }
-
+```
+...then does a binary search to find your ideal match.  It's like a dating site, just for small stretches of DNA instead of eligible humans. 
+```go
 // Utility function to support golang sort
 func (slice andersonCollection) Len() int {
 	return len(slice)
