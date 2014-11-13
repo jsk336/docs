@@ -92,11 +92,11 @@ title: Welcome to Antha
         <p>
         Composer is a web based visual tool for rapidly wiring workflows using {{site.project_title}}. Rapidly define, execute and share your experiments.
         </p>
-        <a href="/docs/concepts/flow-based-programming.html" target="_blank">
           <paper-button>
+        <a href="/docs/concepts/flow-based-programming.html" target="_blank">
             <core-icon icon="arrow-forward"></core-icon> Learn More
-          </paper-button>
         </a>
+          </paper-button>
       </div>
     </summary>
   </div>
