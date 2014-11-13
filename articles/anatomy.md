@@ -43,6 +43,6 @@ The analysis section defines all the computational steps that need to be perform
 What analysis needs to be done to check the element has run as scripted.
 
 ## ...and finally, what *isn't* in here##
-As Antha is designed as a high-level language, it deliberately doesn't include details of what kit it needs to be run, or detailed specifics of e.g. what goes in which well.  
+As Antha is designed as a high-level language, it deliberately doesn't include details of what kit it needs to be run, or detailed specifics of e.g. what goes in which well.  This means that it can be run on any kit with the required functionality, or by hand.  The adaptation of instructions here is done in the execution environment, i.e. the scheduler and device drivers.  
 
 
