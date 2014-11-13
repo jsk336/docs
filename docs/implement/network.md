@@ -99,7 +99,7 @@ func main() {
 ```
 
 The output from this script looks like this:
-```go
+```
 Hello, John!
 I shall call you Sir
 I shall call you Dame
@@ -114,11 +114,11 @@ Every network of processes needs channels which handle inputs and outputs. A cha
 
 ```go
 type Greeter struct {
-    flow.Component               // component "superclass" embedded
-    Name           <-chan string // input port
-    Title          <-chan string // another input port
-    Occupation          <-chan string // another input port
-    Res            chan<- string // output port
+    flow.Component               		// component "superclass" embedded
+    Name           <-chan string 		// input port
+    Title          <-chan string 		// another input port
+    Occupation          <-chan string	// another input port
+    Res            chan<- string 		// output port
 }
 ```
 
@@ -129,7 +129,9 @@ type Printer struct {
 }
 ```
 
-## Define fucntions which transform the inputs.
+## Define functions which transform the inputs.
+
+Transformations on data are executed via functions which point to the processes defined earlier.
 
 ```go
 func (g *Greeter) OnName(name string) {
@@ -181,7 +183,9 @@ func NewGreetingApp() *GreetingApp {
 }
 ```
 
-## Open inport channels, send data too them, and close them again. All data must be passed to the inports before closing any channels.
+## Open inport channels, send data to them, and close them again.
+
+All data must be passed to the inports before closing any channels.
 
 ```go
 func main() {
