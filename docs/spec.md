@@ -9,7 +9,7 @@ title: The Antha Language Specification
 {% include toc.html %}
 
 # Official Antha Language Spec #
-##Introduction##
+## Introduction##
 
 This is a reference manual for the Antha Element language. This language is an extension of the syntax of the Go language, more information about which is available at golang(golang.org).
 
