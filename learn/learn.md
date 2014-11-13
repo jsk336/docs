@@ -4,9 +4,10 @@
 
 
 There is still a huge problem of reproducibility in the biosciences. Unfortunately it is often not as routine as you might think to replicate work reported in the scientific literature, or even work in the same lab by the same person (yeah you!). 
-A report in Nature in 2012 reported that scientists at Amgen managed to reproduce only 11% of 53 cancer-related studies which they'd attempted over the years. Shocking! but unfortunately this is fairly typical and needless to say the cost of this to society is likley to be staggering. With this background, can we really standardise biology and build complex systems as we intend to in the synthetic biology community?
 
-Driven by our in-house needs and what we've learnt through statistal experimentation, automation and advances in the tech sphere, we've come to understand that the whole way in which experiments are designed and recorded needs to fundamentally change in order to solve this problem. The answer... Antha
+A report in Nature in 2012 reported that scientists at Amgen managed to reproduce only 11% of 53 cancer-related studies which they'd attempted over the years. Shocking! but unfortunately this is fairly typical and needless to say the cost of this to society is likely to be staggering. With this background, can we really standardize biology and build complex systems as we intend to in the synthetic biology community?
+
+Driven by our in-house needs and what we've learnt through statistical experimentation, automation and advances in the tech sphere, we've come to understand that the whole way in which experiments are designed and recorded needs to fundamentally change in order to solve this problem. The answer... Antha
 
 ## Redesigning the language of biology ##
 
