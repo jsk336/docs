@@ -36,12 +36,19 @@ title: Welcome to Antha
     <summary>
 		<smart-flow width="800">
 			<div id="grow">
+<<<<<<< Local Changes
+				<segment layout vertical>
+					<h2><core-icon src="images/noun/grow.svg" class="icon-big"></core-icon> Grow</h2>
+					<p>Increase the reproducibility, quality, and scale of your work</p>					
+				</segment>
+=======
 				<smart-flow width="100">
 					<segment layout vertical>
 						<h2><core-icon src="images/noun/grow.svg" class="icon-big"></core-icon> Grow</h2>
 						<p>Increase the reliability, quality, and scale of your work</p>					
 					</segment>
 				</smart-flow>
+>>>>>>> External Changes
 		  	</div>
 			<div id="disseminate">
 				<smart-flow width="100">
