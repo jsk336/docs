@@ -71,7 +71,7 @@ An element should be designed as small as possible yet robustly with built-in va
 Antha Elements follow the same packaging structure as GO packages. [Golang](https://code.google.com/p/go-wiki/wiki/PackagePublishing)
 
 ### Where do all the low-level details go? Does it matter?###
-The low level details are taken care of by antha and its associated scheduler and device drivers.  Details such as analysis of raw data are often dealt with in Antha scripts, so someone that writes Antha can go in and edit them, while "users" can take advantage of what is scripted without having to worry about the details.  Another example of a low level issue is physically where samples are placed in a multiwell plate by a liquid handler, and how the liquid handler is instructed to do the necessary actions.  These issues are dealt with by the scheduler and liquid handler driver respectively.
+The low level details are taken care of by Antha and its associated scheduler and device drivers.  Details such as analysis of raw data are often dealt with in Antha scripts, so someone that writes Antha can go in and edit them, while "users" can take advantage of what is scripted without having to worry about the details.  Another example of a low level issue is physically where samples are placed in a multiwell plate by a liquid handler, and how the liquid handler is instructed to do the necessary actions.  These issues are dealt with by the scheduler and liquid handler driver respectively.
 
 ### Can I integrate scripts from other languages such as Python or Matlab?###
 
