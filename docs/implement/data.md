@@ -90,4 +90,4 @@ The CouchDB document model provides a natural method for keeping track of how sa
 
 ## More info?
 
-For more information regarding Antha please refer to [the documentation](docs link) section.  If you want a more details about the database used by Antha see the [CouchDB documentation](http://couchdb.apache.org).
+For more information regarding Antha please refer to [the documentation](/docs/index.html) section.  If you want a more details about the database used by Antha see the [CouchDB documentation](http://couchdb.apache.org).
