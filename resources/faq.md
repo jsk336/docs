@@ -66,13 +66,14 @@ An element is a reusable unit which can be wired up with other elements to form 
 
 An element should be designed as small as possible yet robustly with built-in validation criteria. Antha will automatically track and log all associated data when the element is executed. Essentially this enables not just the standardization of the genetic parts but standardization and full tracking of the experimental procedure used to characterise. This will inherently allow for greater reproducibility, simplicity and scalability when the elements are wired together to form workflows. Once elements and workflows are designed and tested they can be shared, traded and reviewed in the Antha market place or embedded as a downloadable and executable material and methods section of a research article.
 
-### How do I package a bunch of custom elements together into a workflow? {#packaging}
+### How do I package a bunch of custom elements together into a workflow?### {#packaging}
 
 Antha Elements follow the same packaging structure as GO packages. [Golang](https://code.google.com/p/go-wiki/wiki/PackagePublishing)
 
-### Where do all the low-level details go? Does it matter? 
+### Where do all the low-level details go? Does it matter?###
+The low level details are taken care of by antha and its associated scheduler and device drivers.  Details such as analysis of raw data are often dealt with in Antha scripts, so someone that writes Antha can go in and edit them, while "users" can take advantage of what is scripted without having to worry about the details.  Another example of a low level issue is physically where samples are placed in a multiwell plate by a liquid handler, and how the liquid handler is instructed to do the necessary actions.  These issues are dealt with by the scheduler and liquid handler driver respectively.
 
-### Can I integrate scripts from other languages such as Python or Matlab?
+### Can I integrate scripts from other languages such as Python or Matlab?###
 
 Short answer:
 
