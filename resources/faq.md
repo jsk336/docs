@@ -75,3 +75,13 @@ Antha Elements follow the same packaging structure as GO packages. [Golang](http
 
 ### Can I integrate scripts from other languages such as Python or Matlab?
 
+Short answer:
+
+Not yet. But eventually, yes, via the network protocol.
+
+Long answer:
+Antha elements are designed to run as microservices communicating via a network using a flow-based approach.
+This part of the language is still in very early stage development. Once it is available there will be the option
+to integrate existing scripts with the system by wrapping them in middleware designed to convert to and from the
+required JSON format and do the other required bits like registering their presence and capabilities to the network.
+
