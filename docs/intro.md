@@ -40,7 +40,7 @@ Antha is the first high-level programming language for biology; designed to make
 
 An element can be anything from genetic elements (such as a promoter, ribosome binding site, transcription factor, host cell) to experimental procedures such as DNA assembly, incubation, protein expression or enzyme assays. 
 
-<img src="/images/Individualelement.png" alt="An individual element" title="An individual element" width="100" height="100">
+<img src="/images/Individualelement.png" alt="An individual element" title="An individual element" width="300" height="300">
 
 Antha will automatically track and log all associated data when the element is executed. Essentially this enables not just the standardization of the genetic parts but standardization and full tracking of the experimental procedure used to characterise. This will inherently allow for greater reproducibility, simplicity and scalability when the elements are wired together to form workflows. Once elements and workflows are designed and tested they can be shared or even embedded as a downloadable and executable material and methods section of a research article.
 
@@ -55,7 +55,7 @@ Experiments can then be generated from bundling workflows together. Potentially 
 Antha is an end-to-end fully integrated language with quality control built in to its DNA. As well as a language for experimental design, execution and data processing, it’s a LIMs system, data-management system and QA system, yet simple and fun to use. The language is designed to effortlessly incorporate quality standards such as quality by design and GMP level quality standards without the overhead for the user. This means enhanced traceability, reproducibility and simplicity for the user.
 
 There are many factors which can affect an experiment which typically wouldn't be recorded. With the example of a simple step such as recovering a frozen cell stock and incubating there are many factors which might effect the reproducibility and quality of the procedure which could have a knock on effect in subsequent processes. Normally it would be very laborious to capture all of these variables but Antha aims to capture as many of them as possible automatically. 
-<img src="/images/Antha_seedelement_sourcesofvariability.png" alt="sources of variability" width="100" height="100">
+<img src="/images/Antha_seedelement_sourcesofvariability.png" alt="sources of variability" width="500" height="500">
 
 Because of the abstraction and modularity of Antha, it can potentially be the design and processing tool for experiments carried out on any instrumentation; manually or automated. 
 The scheduler will figure out the most practical and robust strategy for executing the experiment so the experimenter can focus on what they want to do rather than how they do it. 
