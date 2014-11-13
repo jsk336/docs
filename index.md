@@ -9,16 +9,16 @@ title: Welcome to Antha
     <summary>
       <h1>Coding Biology</h1>
       <p>Antha makes it easy to rapidly compose biological work flows using individually testable and reusable Antha Elements.</p>
-      <a href="/docs/intro.html">
         <paper-button raised unresolved>
+      <a href="/docs/intro.html">
           <core-icon icon="archive"></core-icon> Learn More
-        </paper-button>
       </a>
-      <a href="https://github.com/Synthace/antha">
+        </paper-button>
         <paper-button class="github" unresolved>
+      <a href="https://github.com/Synthace/antha">
           <core-icon icon="social:post-github"></core-icon> View on Github
-        </paper-button>
       </a>
+        </paper-button>
     </summary>
   </div>
 </section>
@@ -41,6 +41,7 @@ title: Welcome to Antha
 					<p>Increase the reliability, quality, and scale of your work</p>					
 				</segment>
 		  	</div>
+			<div class="clearfix"></div>
 			<div id="disseminate">
 				<segment layout verticalt>
 					<h2><core-icon src="images/noun/disseminate.svg" class="icon-big"></core-icon> Disseminate</h2>
@@ -55,10 +56,11 @@ title: Welcome to Antha
 					<p>Execute your experiments automatically using robots</p>					
 				</segment>
 		  	</div>
+			<div class="clearfix"></div>
 			<div id="manual">
 				<segment layout verticalt>
 					<h2><core-icon src="images/noun/scientist.svg" class="icon-big"></core-icon> Integrate</h2>
-					<p>Generate instructions to work by hand to supplement your automation</p>					
+					<p>Generate hand instructions to supplement your automation</p>					
 				</segment>
 		  	</div>
 		</div>
@@ -69,6 +71,7 @@ title: Welcome to Antha
 					<p>Automatically track and validate your results</p>					
 				</segment>
 		  	</div>
+			<div class="clearfix"></div>
 			<div id="open">
 				<segment layout verticalt>
 					<h2><core-icon src="images/noun/unlock.png" class="icon-big"></core-icon> Open</h2>
@@ -110,19 +113,19 @@ title: Welcome to Antha
 	  <div layout horizontal justified>
 		  <div></div>
 		  <div>
-	  		<a href="https://groups.google.com/a/antha-lang.org/group/antha-dev/boxsubscribe">
 		  	  	<paper-button raised>
+	  		<a href="https://groups.google.com/a/antha-lang.org/group/antha-dev/boxsubscribe">
 		  			<core-icon icon="mail"></core-icon> Keep in Touch
-				</paper-button>
 			</a>
+				</paper-button>
 		  </div>
 		  <div></div>
 		  <div>	
-      		<a href="/docs/intro.html">
         		<paper-button raised>
+      		<a href="/docs/intro.html">
           	  		<core-icon icon="arrow-forward"></core-icon> Learn more
-        		</paper-button>
       	  	</a>
+        		</paper-button>
 		  </div>
 		  <div></div>
     </summary>
