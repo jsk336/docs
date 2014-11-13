@@ -57,8 +57,8 @@ title: Welcome to Antha
 		  	</div>
 			<div id="manual">
 				<segment layout verticalt>
-					<h2><core-icon src="images/noun/scientist.svg" class="icon-big"></core-icon> Manual</h2>
-					<p>Generate instructions to work by hand as well</p>					
+					<h2><core-icon src="images/noun/scientist.svg" class="icon-big"></core-icon> Integrate</h2>
+					<p>Generate instructions to work by hand to supplement your automation</p>					
 				</segment>
 		  	</div>
 		</div>

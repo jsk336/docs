@@ -12,3 +12,9 @@ title: Tools & Testing
 
 Refer to [Golang](http://www.golang.org).
 
+
+## Installing CouchDB
+
+Refer to [CouchDB](http://couchdb.apache.org).
+
+
