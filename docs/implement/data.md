@@ -33,7 +33,7 @@ Antha stores data as JavaScript Object Notation (JSON) documents within a [Couch
     
 While no structure is enforced on Antha documents, some structure is defined by the attributes or features required to describe an object.  As an example a reagent could be described as follows:
 
-```go
+```
     {
 	"id": "Unique_ID_1234",
 	 "_rev": "12345678910",
@@ -52,7 +52,7 @@ This document describes the attributes of a specific reagent inventively named "
 
 As a second example, we consider a 96 well plate, this is an instance of a labware object and can be described as follows:
 
-```go
+```
     {
 
 	"id": "Unique_ID_5678",
@@ -90,4 +90,4 @@ The CouchDB document model provides a natural method for keeping track of how sa
 
 ## More info?
 
-For more information regarding Antha please refer to [the documentation](docs link) section.  If you want a more details about the database used by Antha see the [CouchDB documentation] (http://couchdb.apache.org).
+For more information regarding Antha please refer to [the documentation](docs link) section.  If you want a more details about the database used by Antha see the [CouchDB documentation](http://couchdb.apache.org).
