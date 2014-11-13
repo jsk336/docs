@@ -14,7 +14,7 @@ flowapidocs:
 --
     import "."
 
-The flow package is a framework for Flow-based programming in Go.
+The flow package is a framework for Flow Based Programming in Go.  It was originally pulled from V. Sibirov's [goflow repository](https://github.com/trustmaster/goflow).
 
 ## Usage
 
@@ -45,24 +45,22 @@ a string component name.
 ```go
 var DefaultBufferSize = 0
 ```
-DefaultBufferSize is the default channel buffer capacity.
+DefaultBufferSize is the default channel buffer capacity. A channel buffer capacity of 0 means that data IPs are transferred immediately between the sending and receiving processes.
 
 ```go
 var DefaultComponentMode = ComponentModeAsync
 ```
-DefaultComponentMode is the preselected functioning mode of all components being
-run.
+DefaultComponentMode is the preselected functioning mode of all components being run.  The default for goflow is Asynchronous.
 
 ```go
 var DefaultNetworkCapacity = 32
 ```
-DefaultNetworkCapacity is the default capacity of network's processes/ports
-maps.
+DefaultNetworkCapacity is the default capacity of network's processes/ports maps.
 
 ```go
 var DefaultNetworkPortsNum = 16
 ```
-Default network output or input ports number
+Default network output or input ports number.
 
 #### func  Factory
 
@@ -76,58 +74,49 @@ Factory creates a new instance of a component registered under a specific name.
 ```go
 func NewGraph() interface{}
 ```
-NewGraph creates a new canvas graph that can be modified at run-time. Implements
-ComponentConstructor interace, so can it be used with Factory.
+NewGraph creates a new canvas graph that can be modified at run-time. Implements ComponentConstructor interface, so can it be used with Factory.
 
 #### func  Register
 
 ```go
 func Register(componentName string, constructor ComponentConstructor) bool
 ```
-Register registers a component so that it can be instantiated at run-time using
-component Factory. It returns true on success or false if component name is
-already taken.
+Register registers a component so that it can be instantiated at run-time using component Factory. It returns true on success or false if component name is already taken.
 
 #### func  RegisterJSON
 
 ```go
 func RegisterJSON(componentName, filePath string) bool
 ```
-RegisterJSON registers an external JSON graph definition as a component that can
-be instantiated at run-time using component Factory. It returns true on success
-or false if component name is already taken.
+RegisterJSON registers an external JSON graph definition as a component that can be instantiated at run-time using component Factory. It returns true on success or false if component name is already taken.
 
 #### func  RunNet
 
 ```go
 func RunNet(i interface{})
 ```
-RunNet runs the network by starting all of its processes. It runs Init/Finish
-handlers if the network implements Initializable/Finalizable interfaces.
+RunNet runs the network by starting all of its processes. It runs Init/Finish handlers if the network implements Initializable/Finalizable interfaces.
 
 #### func  RunProc
 
 ```go
 func RunProc(c interface{}, nump int) bool
 ```
-RunProc runs event handling loop on component ports. It returns true on success
-or panics with error message and returns false on error.
+RunProc runs event handling loop on component ports. It returns true on success or panics with error message and returns false on error.
 
 #### func  StopProc
 
 ```go
 func StopProc(c interface{}) bool
 ```
-StopProc terminates the process if it is running. It doesn't close any in or out
-ports of the process, so it can be replaced without side effects.
+StopProc terminates the process if it is running. It doesn't close any in or out ports of the process, so it can be replaced without side effects.
 
 #### func  Unregister
 
 ```go
 func Unregister(componentName string) bool
 ```
-Unregister removes a component with a given name from the component registry and
-returns true or returns false if no such component is registered.
+Unregister removes a component with a given name from the component registry and returns true or returns false if no such component is registered.
 
 #### type Canvas
 
@@ -168,8 +157,7 @@ type ComponentConstructor func() interface{}
 ```
 
 ComponentConstructor is a function that can be registered in the
-ComponentRegistry so that it is used when creating new processes of a specific
-component using Factory function at run-time.
+ComponentRegistry so that it is used when creating new processes of a specific component using Factory function at run-time.
 
 #### type Finalizable
 
@@ -199,32 +187,28 @@ Graph represents a graph of processes connected with packet channels.
 ```go
 func LoadJSON(filename string) *Graph
 ```
-LoadJSON loads a JSON graph definition file into a flow.Graph object that can be
-run or used in other networks
+LoadJSON loads a JSON graph definition file into a flow.Graph object that can be run or used in other networks
 
 #### func  ParseJSON
 
 ```go
 func ParseJSON(js []byte) *Graph
 ```
-ParseJSON converts a JSON network definition string into a flow.Graph object
-that can be run or used in other networks
+ParseJSON converts a JSON network definition string into a flow.Graph object that can be run or used in other networks
 
 #### func (*Graph) Add
 
 ```go
 func (n *Graph) Add(c interface{}, name string) bool
 ```
-Add adds a new process with a given name to the network. It returns true on
-success or panics and returns false on error.
+Add adds a new process with a given name to the network. It returns true on success or panics and returns false on error.
 
 #### func (*Graph) AddGraph
 
 ```go
 func (n *Graph) AddGraph(name string) bool
 ```
-AddGraph adds a new blank graph instance to a network. That instance can be
-modified then at run-time.
+AddGraph adds a new blank graph instance to a network. That instance can be modified then at run-time.
 
 #### func (*Graph) AddIIP
 
@@ -238,26 +222,21 @@ AddIIP adds an Initial Information packet to the network
 ```go
 func (n *Graph) AddNew(componentName string, processName string) bool
 ```
-AddNew creates a new process instance using component factory and adds it to the
-network.
+AddNew creates a new process instance using component factory and adds it to the network.
 
 #### func (*Graph) Connect
 
 ```go
 func (n *Graph) Connect(senderName, senderPort, receiverName, receiverPort string) bool
 ```
-Connect connects a sender to a receiver and creates a channel between them using
-DefaultBufferSize. Normally such a connection is unbuffered but you can change
-by setting flow.DefaultBufferSize > 0 or by using ConnectBuf() function instead.
-It returns true on success or panics and returns false if error occurs.
+Connect connects a sender to a receiver and creates a channel between them using DefaultBufferSize. Normally such a connection is unbuffered but you can change by setting flow.DefaultBufferSize > 0 or by using ConnectBuf() function instead. It returns true on success or panics and returns false if error occurs.
 
 #### func (*Graph) ConnectBuf
 
 ```go
 func (n *Graph) ConnectBuf(senderName, senderPort, receiverName, receiverPort string, bufferSize int) bool
 ```
-Connect connects a sender to a receiver using a channel with a buffer of a given
-size. It returns true on success or panics and returns false if error occurs.
+Connect connects a sender to a receiver using a channel with a buffer of a given size. It returns true on success or panics and returns false if error occurs.
 
 #### func (*Graph) DecSendChanRefCount
 
@@ -299,33 +278,28 @@ InitGraphState method initializes graph fields and allocates memory.
 ```go
 func (n *Graph) MapInPort(name, procName, procPort string) bool
 ```
-MapInPort adds an inport to the net and maps it to a contained proc's port. It
-returns true on success or panics and returns false on error.
+MapInPort adds an inport to the net and maps it to a contained proc's port. It returns true on success or panics and returns false on error.
 
 #### func (*Graph) MapOutPort
 
 ```go
 func (n *Graph) MapOutPort(name, procName, procPort string) bool
 ```
-MapOutPort adds an outport to the net and maps it to a contained proc's port. It
-returns true on success or panics and returns false on error.
+MapOutPort adds an outport to the net and maps it to a contained proc's port. It returns true on success or panics and returns false on error.
 
 #### func (*Graph) Ready
 
 ```go
 func (n *Graph) Ready() <-chan struct{}
 ```
-Ready returns a channel that can be used to suspend the caller goroutine until
-the network is ready to accept input packets
+Ready returns a channel that can be used to suspend the caller goroutine until the network is ready to accept input packets
 
 #### func (*Graph) Remove
 
 ```go
 func (n *Graph) Remove(processName string) bool
 ```
-Remove deletes a process from the graph. First it stops the process if running.
-Then it disconnects it from other processes and removes the connections from the
-graph. Then it drops the process itself.
+Remove deletes a process from the graph. First it stops the process if running. Then it disconnects it from other processes and removes the connections from the graph. Then it drops the process itself.
 
 #### func (*Graph) RemoveIIP
 
@@ -339,8 +313,7 @@ RemoveIIP detaches an IIP from specific process and port
 ```go
 func (n *Graph) Rename(processName, newName string) bool
 ```
-Rename changes a process name in all connections, external ports, IIPs and the
-graph itself.
+Rename changes a process name in all connections, external ports, IIPs and the graph itself.
 
 #### func (*Graph) RenameInPort
 
@@ -361,16 +334,14 @@ RenameOutPort changes graph's outport name
 ```go
 func (n *Graph) SetInPort(name string, channel interface{}) bool
 ```
-SetInPort assigns a channel to a network's inport to talk to the outer world. It
-returns true on success or false if the inport cannot be set.
+SetInPort assigns a channel to a network's inport to talk to the outer world. It returns true on success or false if the inport cannot be set.
 
 #### func (*Graph) SetOutPort
 
 ```go
 func (n *Graph) SetOutPort(name string, channel interface{}) bool
 ```
-SetOutPort assigns a channel to a network's outport to talk to the outer world.
-It returns true on success or false if the outport cannot be set.
+SetOutPort assigns a channel to a network's outport to talk to the outer world. It returns true on success or false if the outport cannot be set.
 
 #### func (*Graph) Stop
 
