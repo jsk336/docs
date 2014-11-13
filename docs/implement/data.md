@@ -70,7 +70,7 @@ As a second example, we consider a 96 well plate, this is an instance of a labwa
     }
 ```
 
-## Accessing information 
+## Accessing information  
 
 ### Using views
 
