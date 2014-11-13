@@ -36,13 +36,13 @@ title: Welcome to Antha
     <summary>
 		<div layout horizontal justified>
 			<div id="grow">
-				<segment layout verticalt>
+				<segment layout vertical>
 					<h2><core-icon src="images/noun/grow.svg" class="icon-big"></core-icon> Grow</h2>
 					<p>Increase the reliability, quality, and scale of your work</p>					
 				</segment>
 		  	</div>
 			<div id="disseminate">
-				<segment layout verticalt>
+				<segment layout vertical>
 					<h2><core-icon src="images/noun/disseminate.svg" class="icon-big"></core-icon> Disseminate</h2>
 					<p>Easily share reusable device independent methods</p>					
 				</segment>
@@ -50,13 +50,13 @@ title: Welcome to Antha
     	</div>
 		<div layout horizontal justified>
 			<div id="automate">
-				<segment layout verticalt>
+				<segment layout vertical>
 					<h2><core-icon src="images/noun/robot.svg" class="icon-big"></core-icon> Automate</h2>
 					<p>Execute your experiments automatically using robots</p>					
 				</segment>
 		  	</div>
 			<div id="manual">
-				<segment layout verticalt>
+				<segment layout vertical>
 					<h2><core-icon src="images/noun/scientist.svg" class="icon-big"></core-icon> Manual</h2>
 					<p>Generate instructions to work by hand as well</p>					
 				</segment>
@@ -64,13 +64,13 @@ title: Welcome to Antha
 		</div>
 		<div layout horizontal justified>
 			<div id="track">
-				<segment layout verticalt>
+				<segment layout vertical>
 					<h2><core-icon src="images/noun/data.svg" class="icon-big"></core-icon> Track</h2>
 					<p>Automatically track and validate your results</p>					
 				</segment>
 		  	</div>
 			<div id="open">
-				<segment layout verticalt>
+				<segment layout vertical>
 					<h2><core-icon src="images/noun/unlock.png" class="icon-big"></core-icon> Open</h2>
 					<p>Antha is Open Source, with your data in open formats</p>					
 				</segment>
