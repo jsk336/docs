@@ -50,7 +50,7 @@ to set its value.
 The Antha language extends this idea to the notion of physical types. Before getting into the details
 its worth going over the benefits of typing. 
 
-##Why use type systems?
+## Why use type systems?
 
 As mentioned above, many languages use type systems to define what data is allowed to be stored
 where, however not all of them do. Some developers find the need to be very specific about what
@@ -67,7 +67,7 @@ However for larger programs with complex behaviours over a very wide class of in
 find that the benefits of the above (which is known as *static analysis*) are substantial since 
 such errors are common and can be quite hard to find. 
 
-##Type Composition
+## Type Composition
 
 Languages such as Antha, go, java and C++ are *strongly typed* which means that any operation is only 
 defined on specific types of inputs. This is useful for static type checking, however it does
@@ -88,13 +88,13 @@ A second important mechanism is to define types as falling into *hierarchies*, a
 with inheritance of properties: all solids, liquids and gases are physical things, hence they share all
 the properties a physical thing has although of course they have other properties. 
 
-##Typing in Antha
+## Typing in Antha
 
 Antha extends the notion of typing to the biochemistry domain using composition and hierarchical typing.
 The two most significant hierarchies are the unit system and one relating to physical objects - quantities
 and things. 
 
-###Quantities
+### Quantities
 
 Quantities have units built-in so that it is always necessary to define which units a particular measurement
 is made in. The Antha system knows a handful of basic units:
