@@ -42,7 +42,7 @@ An element can be anything from genetic elements (such as a promoter, ribosome b
 
 <img src="/images/Individualelement.png" alt="An individual element" title="An individual element" width="300" height="300">
 
-Antha will automatically track and log all associated data when the element is executed. Essentially this enables not just the standardization of the genetic parts but standardization and full tracking of the experimental procedure used to characterise. This will inherently allow for greater reproducibility, simplicity and scalability when the elements are wired together to form workflows. Once elements and workflows are designed and tested they can be shared or even embedded as a downloadable and executable material and methods section of a research article.
+Antha will automatically track and log all associated data when the element is executed. Essentially this enables not just the standardization of the genetic parts but standardization and full tracking of the experimental procedure used to characterise a part. This will inherently allow for greater reproducibility, simplicity and scalability when the elements are wired together to form workflows. Once elements and workflows are designed and tested they can be shared or even embedded as a downloadable and executable material and methods section of a research article.
 
 <img src="/images/antha-workflowfull.png" alt="An Antha workflow" title="An Antha workflow">
 
@@ -62,8 +62,12 @@ The scheduler will figure out the most practical and robust strategy for executi
 
 ## Next steps {#nextsteps}
 
-Continue on to the core concepts documentation: 
+Continue on to the core concepts documentation or check out an example of an element: 
 
 <a href="/docs/index.html">
   <paper-button raised><core-icon icon="arrow-forward" ></core-icon>Core concepts</paper-button>
+</a>
+
+<a href="/docs/examples/promoter.md">
+  <paper-button raised><core-icon icon="arrow-forward" ></core-icon>Example</paper-button>
 </a>

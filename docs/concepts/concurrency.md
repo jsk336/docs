@@ -13,7 +13,7 @@ docs:
 
 # Concurrency
 
-Concurrency is hard, at least in most programming languages. Go has the ability to execute processes concurrently and, critically, to coordinate concurrent processes efficiently. That’s why we chose Go as the basis for the antha language. 
+Concurrency is hard, at least in most programming languages. The Go language has the ability to execute processes concurrently and, critically, to coordinate concurrent processes efficiently. That’s why we chose Go as the basis for the antha language. 
 
 ## What is concurrency? 
 Rob Pike, one of the pioneers of Go from Google, [explains](https://www.youtube.com/watch?v=cN_DpYBzKso) that concurrency is NOT the same as parallelism, it’s better. 
