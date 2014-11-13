@@ -50,7 +50,7 @@ to set its value.
 The Antha language extends this idea to the notion of physical types. Before getting into the details
 its worth going over the benefits of typing. 
 
-##Why use type systems?
+## Why use type systems?
 
 As mentioned above, many languages use type systems to define what data is allowed to be stored
 where, however not all of them do. Some developers find the need to be very specific about what
@@ -67,7 +67,7 @@ However for larger programs with complex behaviours over a very wide class of in
 find that the benefits of the above (which is known as *static analysis*) are substantial since 
 such errors are common and can be quite hard to find. 
 
-##Type Composition
+## Type Composition
 
 Languages such as Antha, go, java and C++ are *strongly typed* which means that any operation is only 
 defined on specific types of inputs. This is useful for static type checking, however it does
@@ -88,13 +88,13 @@ A second important mechanism is to define types as falling into *hierarchies*, a
 with inheritance of properties: all solids, liquids and gases are physical things, hence they share all
 the properties a physical thing has although of course they have other properties. 
 
-##Typing in Antha
+## Typing in Antha
 
 Antha extends the notion of typing to the biochemistry domain using composition and hierarchical typing.
 The two most significant hierarchies are the unit system and one relating to physical objects - quantities
 and things. 
 
-###Quantities
+### Quantities
 
 Quantities have units built-in so that it is always necessary to define which units a particular measurement
 is made in. The Antha system knows a handful of basic units:
@@ -157,7 +157,7 @@ Dimensions such as length, volume, concentration are then special cases of the
 Measurement type - this allows the go compiler to check the types are appropriate
 when the protocol is compiled. 
 
-###Physical Types
+### Physical Types
 
 Physical types start by defining the basic material composition of an object or sample,
 using the Matter type. This type defines the principal features of the object, such as 
@@ -174,7 +174,8 @@ a gripper or a liquid with a pipette)
 There are many additional types which define things such as biological entities (DNA,
 RNA, proteins), for more information check out the [docs](documentation link).
 
-###Initial set of matter types
+### Initial set of matter types
+
 Name | Notes
 -----|------
 polypropylene | for plates and tubes
@@ -194,7 +195,7 @@ which behave essentially as water should be defined as water, viscous solutions 
 These are heuristics for the liquid handling which can be extended in the future. The actual composition
 of a solution is then defined using simple textual labels. 
 
-###Labware
+### Labware
 
 Labware defines items of use when mixing and storing solutions, such as plates, tubes etc. 
 Labware types are physical, solid objects, meaning they must be composed of some sort of matter
@@ -204,13 +205,13 @@ In the initial language only the Plate labware type is defined, this has a numbe
 physical dimensions such as volume specified. Plates are assumed to be SBS-formatted although their height
 can vary. 
 
-###Devices
+### Devices
 
 Devices come in a few classes: Pipetter, Mover, Heater, Chiller, Sealer, DeSealer. These types can be composed
 together for devices which have multiple characteristics. These define methods which perform functions on 
 liquids and also define Slots which can contain labware. 
 
-###Accessory Types
+### Accessory Types
 
 There are several accessory types which define the capabilities of particular items: Container is a useful example, 
 simply defining when something can act as a container for something else. It must have a set of physical dimensions
@@ -219,7 +220,7 @@ which allow the system to determine whether the proposed item to be placed withi
 Entity is a further useful type which defines when an object is able to be moved as a discrete unit. For instance a
 well in a standard microplate is not an entity since it cannot be detached from the plate, while the plate itself is.
 
-##Summary
+## Summary
 
 This has been a very brief tour of the typing system. For more information please consult [the documentation](the documentation)
 

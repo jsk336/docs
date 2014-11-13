@@ -27,7 +27,7 @@ The will to improve reproducibility is not new. In recent years efforts have bee
 
 The idea of abstraction and standardization are very welcome but unfortunately we don’t yet fully understand how even the simplest and most well-studied bacteria such as E.coli function… We know that the genome is 5.7million letters long and that about 4-5000 genes are produced but only around 66% of these genes have been experimentally verified. So how can we use a standardized parts based approach to building new microbes when we don’t fully understand how the operating system works? The answer may be to standardize the experimental format in which these parts are characterized, and capture all of the subtle artisanal details of a procedure not usually captured in a material and methods section of a research article.
 
-Antha allows you to do this snd critically, the hard work is performed behind the scenes so GMP and QBD quality standards can be enforced but without the effort overhead. With Antha we can embrace the fact that we don’t fully understand the complexity of the biology and perform our characterizations reproducibly in a way in which new parts and devices are tested for robustness in the full genetic, biological and environmental context and to do so in a way where we design this approach to be performed by a liquid handling robot in which the characterisation process then becomes a software algorithm rather than a written material and methods section in a scientific journal, which has been the case up until now.  This approach would be a far more reproducible, scalable and robust way of standardization; not so dependent on a lab technician’s green fingers!
+Antha allows you to do this and critically, the hard work is performed behind the scenes so GMP and QBD quality standards can be enforced but without the effort overhead. With Antha we can embrace the fact that we don’t fully understand the complexity of the biology and perform our characterizations reproducibly in a way in which new parts and devices are tested for robustness in the full genetic, biological and environmental context and to do so in a way where we design this approach to be performed by a liquid handling robot in which the characterisation process then becomes a software algorithm rather than a written material and methods section in a scientific journal, which has been the case up until now.  This approach would be a far more reproducible, scalable and robust way of standardization; not so dependent on a lab technician’s green fingers!
 
 
 ### What about Biocoder, SBOL, PrPr and Chris? {#why}
@@ -55,8 +55,7 @@ Absolutely, we welcome contributions to both the langauge itself and the buildin
 ### What format does Antha produce data in? {#openData}
 
 {{site.project_title}} translates the proprietary formats of the various devices accessed as part of the process of 
-experimeent execution into open JSON based data. The original proprietary format inputs are also captured for archival purposes if
-you like those sorts of things.
+experiment execution into open JSON based data. The original proprietary format inputs are also captured for archival purposes if you like those sorts of things.
 
 ## Antha Elements
 
@@ -75,4 +74,14 @@ Antha Elements follow the same packaging structure as GO packages. [Golang](http
 ### Where do all the low-level details go? Does it matter? 
 
 ### Can I integrate scripts from other languages such as Python or Matlab?
+
+Short answer:
+
+Not yet. But eventually, yes, via the network protocol.
+
+Long answer:
+Antha elements are designed to run as microservices communicating via a network using a flow-based approach.
+This part of the language is still in very early stage development. Once it is available there will be the option
+to integrate existing scripts with the system by wrapping them in middleware designed to convert to and from the
+required JSON format and do the other required bits like registering their presence and capabilities to the network.
 

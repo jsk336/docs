@@ -1,10 +1,10 @@
 ---
 layout: default
-type: core
+type: resources
 navgroup: resources
 shortname: articles
 title: Articles
-subtitle: Core concepts of how to work in Antha
+subtitle: Articles written by the Antha authors
 
 add_permalinks: false
 ---
