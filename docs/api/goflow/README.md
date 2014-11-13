@@ -42,7 +42,7 @@ import "github.com/Synthace/goflow"
 
 Below there is a listing of a simple program running a network of two processes with four channels (three inports, one outport).  For a more detailed look at the syntax, please refer to the [network documentation](http://antha-lang.org/docs/implement/network.html).
 
-![Greeter example diagram](http://antha-lang.org/docs/api/goflow/goflow-hello.png)
+![Greeter example diagram](goflow-hello.png)
 
 This first one generates greetings for given names, the second one prints them on screen. It demonstrates how components and graphs are defined and how they are embedded into the main program.
 
