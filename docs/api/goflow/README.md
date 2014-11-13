@@ -8,6 +8,7 @@ flowapidocs:
   published: 2014-11-14
   antha_version: 0.0.1
   package: goflow-api.md
+  description: General information on Goflow
 ---
 
 # GoFlow - Dataflow and Flow-based programming library for Go (golang)

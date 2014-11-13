@@ -20,7 +20,7 @@ add_permalinks: false
 ## [{{ p.title }}]({{ p.url }})
 
 <summary>
-{{p.docs.description}}
+{{p.executeapidocs.description}}
 </summary>
 </div>
 {% endif %}

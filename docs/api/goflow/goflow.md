@@ -7,7 +7,8 @@ title: goflow.md
 flowapidocs:
   published: 2014-11-14
   antha_version: 0.0.1
-  package: execution-api.md
+  package: goflow.md
+  description: More detail on the goflow API
 ---
 
 # flow
