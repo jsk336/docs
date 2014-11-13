@@ -3,6 +3,7 @@ Sean Ward, Antha team
 Michael Sadowski, Antha team
 Sarah Bryan, Antha team
 Josi Lemke, Antha team
+Chris Grant, Antha team
 
 /* Original template courtesy Polymer team */
 /* TEAM */

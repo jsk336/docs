@@ -40,9 +40,15 @@ Antha is the first high-level programming language for biology; designed to make
 
 An element can be anything from genetic elements (such as a promoter, ribosome binding site, transcription factor, host cell) to experimental procedures such as DNA assembly, incubation, protein expression or enzyme assays. 
 
+<img src="/images/Individualelement.png" alt="Launch the designer tool" title="Launch the designer tool">
+
 Antha will automatically track and log all associated data when the element is executed. Essentially this enables not just the standardization of the genetic parts but standardization and full tracking of the experimental procedure used to characterise. This will inherently allow for greater reproducibility, simplicity and scalability when the elements are wired together to form workflows. Once elements and workflows are designed and tested they can be shared or even embedded as a downloadable and executable material and methods section of a research article.
 
 <img src="/images/antha-workflowfull.png" alt="Launch the designer tool" title="Launch the designer tool">
+
+Experiments can then be generated from bundling workflows together. Potentially designed, scheduled, executed and processed in response to **what** the experimenter wants to find out, leaving the **how** to be abstracted from the user if desired.
+
+<img src="/images/antha-workflowstack_small.png" alt="Launch the designer tool" title="Launch the designer tool">
 
 ## Quality built-in ##
 
