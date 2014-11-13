@@ -157,7 +157,7 @@ Dimensions such as length, volume, concentration are then special cases of the
 Measurement type - this allows the go compiler to check the types are appropriate
 when the protocol is compiled. 
 
-###Physical Types
+### Physical Types
 
 Physical types start by defining the basic material composition of an object or sample,
 using the Matter type. This type defines the principal features of the object, such as 
@@ -174,7 +174,8 @@ a gripper or a liquid with a pipette)
 There are many additional types which define things such as biological entities (DNA,
 RNA, proteins), for more information check out the [docs](documentation link).
 
-###Initial set of matter types
+### Initial set of matter types
+
 Name | Notes
 -----|------
 polypropylene | for plates and tubes
@@ -194,7 +195,7 @@ which behave essentially as water should be defined as water, viscous solutions 
 These are heuristics for the liquid handling which can be extended in the future. The actual composition
 of a solution is then defined using simple textual labels. 
 
-###Labware
+### Labware
 
 Labware defines items of use when mixing and storing solutions, such as plates, tubes etc. 
 Labware types are physical, solid objects, meaning they must be composed of some sort of matter
@@ -204,13 +205,13 @@ In the initial language only the Plate labware type is defined, this has a numbe
 physical dimensions such as volume specified. Plates are assumed to be SBS-formatted although their height
 can vary. 
 
-###Devices
+### Devices
 
 Devices come in a few classes: Pipetter, Mover, Heater, Chiller, Sealer, DeSealer. These types can be composed
 together for devices which have multiple characteristics. These define methods which perform functions on 
 liquids and also define Slots which can contain labware. 
 
-###Accessory Types
+### Accessory Types
 
 There are several accessory types which define the capabilities of particular items: Container is a useful example, 
 simply defining when something can act as a container for something else. It must have a set of physical dimensions
@@ -219,7 +220,7 @@ which allow the system to determine whether the proposed item to be placed withi
 Entity is a further useful type which defines when an object is able to be moved as a discrete unit. For instance a
 well in a standard microplate is not an entity since it cannot be detached from the plate, while the plate itself is.
 
-##Summary
+## Summary
 
 This has been a very brief tour of the typing system. For more information please consult [the documentation](the documentation)
 
