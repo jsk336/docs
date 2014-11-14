@@ -78,7 +78,7 @@ title: Welcome to Antha
 			<div id="open">
 				<smart-flow width="100">
 					<segment layout vertical>
-						<h2><core-icon src="images/noun/unlock.png" class="icon-big"></core-icon> Open</h2>
+						<h2><core-icon src="images/noun/unlock.s”vg class="icon-big"></core-icon> Open</h2>
 						<p>Antha is Open Source, with your data in open formats</p>					
 					</segment>
 				</smart-flow>
