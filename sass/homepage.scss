@@ -56,7 +56,7 @@ section .bar {
   }
 
   a {
-    color: inherit;
+    color:  rgb(51,137,192);
     font-size: $font-size-body;
     // font-weight: 600;
     // letter-spacing: 0.01em;
@@ -176,7 +176,8 @@ site-banner .logo {
     @include flex(1 1 0.000001px);
   }
   a {
-    text-decoration: none;
+    text-decoration: none; 
+    color:  rgb(51,137,192);
   }
   a:not(:last-of-type) {
     margin-right: 12px;

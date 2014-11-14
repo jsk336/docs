@@ -79,7 +79,7 @@ pre, code {
 }
 
 a code {
-  color: currentcolor;
+  color:  rgb(51,137,192);
 }
 
 ul, ol {
@@ -226,6 +226,7 @@ a[disabled] {
 app-bar {
   a {
     text-decoration: none !important;
+    color: rgb(51,137,192);
   }
   .paper-button {
     font-size: $font-size-secondary;
@@ -241,6 +242,7 @@ app-bar {
 
   a {
     text-decoration: none;
+    color: rgb(51,137,192);
   }
 }
 
