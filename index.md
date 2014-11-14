@@ -9,7 +9,7 @@ title: Welcome to Antha
 
     <summary>
       <h1>coding biology</h1>
-      <p align="justify">Antha makes it easy to rapidly compose biological work flows using individually testable and reusable Antha Elements.</p>
+      <p align="justify">Antha is the first high-level language for biology. Making it easy to rapidly compose reproducible work flows using individually testable and reusable Antha Elements.</p>
 
       <paper-button raised unresolved>
         <a href="/docs/intro.html">

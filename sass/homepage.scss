@@ -17,6 +17,7 @@
 
 .h1heading {
   font-size: 35px;
+  color: rgb(51,137,192);
 }
 
 .h5heading {
@@ -34,7 +35,7 @@ section {
 }
 
 .main-purple {
-  color: white;
+  color: inherit;
 }
 
 section .bar {
@@ -50,7 +51,7 @@ section .bar {
     @extend .main-purple;
 
     a {
-      color: white;
+      color: rgb(51,137,192);
     }
   }
 
