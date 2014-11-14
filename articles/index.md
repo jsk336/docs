@@ -3,8 +3,8 @@ layout: default
 type: resources
 navgroup: resources
 shortname: articles
-title: Blog
-subtitle: Articles and blog posts written by the Antha authors
+title: Articles
+subtitle: Articles written by the Antha authors
 
 add_permalinks: false
 ---

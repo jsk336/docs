@@ -6,28 +6,32 @@ title: Welcome to Antha
 <section id="future" class="main-bg">
   <div class="panel left">
     <img src="/images/logos/a-logo-color-416.svg">
-
     <summary>
-      <h1 style="color:rgb(51,137,192)">coding biology</h1>
-      <p align="justify">Antha is the first high-level programming language for biology. Making it easy to rapidly compose reproducible work flows using individually testable and reusable Antha Elements.</p>
-
+      <h1>Coding Biology</h1>
+      <p>Antha is the first high-level langauge for biology. Making it easy to rapidly compose reproducible work flows using individually testable and reusable Antha Elements.</p>
       <paper-button raised unresolved>
         <a href="/docs/intro.html">
           <core-icon icon="archive"></core-icon> Learn More
       	</a>
       </paper-button>
-
-      <paper-button raised class="github" unresolved>
+      <paper-button class="github" unresolved>
       	<a href="https://github.com/Synthace/antha">
           <core-icon icon="social:post-github"></core-icon> View on Github
       	</a>
       </paper-button>
     </summary>
   </div>
-
 </section>
 
-<section id="why-antha" class="main-purple">
+<section id="learn" class="main-purple">
+  <div class="panel right">
+    <summary>
+      <learn-tabs></learn-tabs>
+    </summary>
+  </div>
+</section>
+
+<section id="why-antha" class="main-bg">
   <div class="panel right">
     <summary>
 		<smart-flow width="800">
@@ -88,10 +92,10 @@ title: Welcome to Antha
   </div>
 </section>
 
-<section id="composer" class="main-bg">
+<section id="composer" class="main-purple">
   <div class="panel">
     <summary style="transform: translateZ(0);">
-      <h1 style="color:rgb(51,137,192)">Visually Develop Workflows</h1>
+      <h1>Visually Develop Workflows</h1>
 	  <br>
 	<div class="scroll">
       		<a href="/docs/concepts/flow-based-programming.html" target="_blank">
@@ -111,16 +115,6 @@ title: Welcome to Antha
     </summary>
   </div>
 </section>
-
-
-<section id="learn" class="main-purple">
-  <div class="panel right">
-    <summary>
-      <learn-tabs></learn-tabs>
-    </summary>
-  </div>
-</section>
-
 
 <section id="keep-in-touch" class="main-bg">
   <div class="panel right">
