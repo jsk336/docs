@@ -84,7 +84,7 @@
     border-bottom: none;
     .selected {
       color: #fff !important;
-      border-bottom: 4px solid #d61a7f;
+      border-bottom: 4px solid #c03389;
     }
   }
 }
@@ -105,7 +105,7 @@ plunker-button {
 }
 plunker-button::shadow paper-button[raised] {
   color: white;
-  background: #3367d6;
+  background: #3389c0;
 }
 
 @media only screen and (min-width: 990px)  {
