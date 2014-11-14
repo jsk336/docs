@@ -91,7 +91,7 @@ title: Welcome to Antha
 <section id="composer" class="main-bg">
   <div class="panel">
     <summary style="transform: translateZ(0);">
-      <h1 style="color:rgb(51,137,192)>Visually Develop Workflows</h1>
+      <h1 style="color:rgb(51,137,192)">Visually Develop Workflows</h1>
 	  <br>
 	<div class="scroll">
       		<a href="/docs/concepts/flow-based-programming.html" target="_blank">
