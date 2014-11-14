@@ -26,7 +26,7 @@ title: Introduction to Antha
 
 # Learn Antha #
 
-## Making biology Simple, Reproducible and Scalable ##
+## Making biology simple, reproducible and scalable ##
 
 
 There is still a huge problem of reproducibility in the biosciences. Unfortunately it is often not as routine as you might think to replicate work reported in the scientific literature, or even work in the same lab by the same person (yeah you!). 
