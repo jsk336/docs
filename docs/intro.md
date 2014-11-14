@@ -68,6 +68,6 @@ Continue on to the core concepts documentation or check out an example of an ele
   <paper-button raised><core-icon icon="arrow-forward" ></core-icon>Core concepts</paper-button>
 </a>
 
-<a href="/docs/examples/promoter.md">
+<a href="/docs/examples/promoter.html">
   <paper-button raised><core-icon icon="arrow-forward" ></core-icon>Example</paper-button>
 </a>
