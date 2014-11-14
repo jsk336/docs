@@ -26,7 +26,7 @@ title: Introduction to Antha
 
 # Learn Antha #
 
-## Making biology simple, reproducible and scalable ##
+## Making biology Simple, Reproducible and Scalable ##
 
 
 There is still a huge problem of reproducibility in the biosciences. Unfortunately it is often not as routine as you might think to replicate work reported in the scientific literature, or even work in the same lab by the same person (yeah you!). 
@@ -36,11 +36,11 @@ Driven by our in-house needs and what we've learnt through statistical experimen
 
 ## Redesigning the language of biology ##
 
-Antha is the first high-level programming language for biology; designed to make simple, reproducible and scalable workflows by stacking smart and reusable elements.
+Antha is the first [high-level programming language](https://en.wikipedia.org/wiki/High-level_programming_language) for biology; designed to make simple, reproducible and scalable workflows by stacking smart and reusable elements.
 
-An element can be anything from genetic elements (such as a promoter, ribosome binding site, transcription factor, host cell) to experimental procedures such as DNA assembly, incubation, protein expression or enzyme assays. 
+An element can be anything from genetic elements (such as a [promoter](https://en.wikipedia.org/wiki/Promoter_%28genetics%29), [gene](https://en.wikipedia.org/wiki/Gene), [transcription factor](https://en.wikipedia.org/wiki/Transcription_factor) or the particular strain of yeast or bacteria used as host) to experimental procedures such as [DNA assembly](http://parts.igem.org/About_Assembly), incubation, [protein expression](https://en.wikipedia.org/wiki/Protein_expression_%28biotechnology%29) or [enzyme assays](https://en.wikipedia.org/wiki/Enzyme_assay). 
 
-<img src="/images/Individualelement.png" alt="An individual element" title="An individual element" width="300" height="300">
+<img src="/images/Individualelement.png" alt="An individual element" title="An individual element" width="150" height="150">
 
 Antha will automatically track and log all associated data when the element is executed. Essentially this enables not just the standardization of the genetic parts but standardization and full tracking of the experimental procedure used to characterise a part. This will inherently allow for greater reproducibility, simplicity and scalability when the elements are wired together to form workflows. Once elements and workflows are designed and tested they can be shared or even embedded as a downloadable and executable material and methods section of a research article.
 
