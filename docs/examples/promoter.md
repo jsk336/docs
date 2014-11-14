@@ -130,6 +130,6 @@ func (slice andersonCollection) GetClosest(str float64) andersonSequence {
 ```
 ## Move on to Anatomy of an Antha element
 
-<a href="/docs/examples/bradford.md">
+<a href="/docs/examples/bradford.html">
   <paper-button raised><core-icon icon="arrow-forward" ></core-icon>Anatomy of an element</paper-button>
 </a>
