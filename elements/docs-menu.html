@@ -53,7 +53,7 @@
     <!-- <core-item label="Docs" src="/images/logos/logo_colour_24x24_nocircles.svg" hidden?="{{menu != 'start'}}"><a href="/docs/index.html"></a></core-item> -->
 	
     <!--<core-item id="articles" label="Blog" icon="av:news" hidden?="{{menu && menu != 'docs' && menu != 'other'}}"> -->
-    <core-item id="articles" label="Blog" icon="av:news" hidden?="{{menu != 'other'}}">
+    <core-item id="articles" label="Blog" icon="av:news" hidden?="{{menu && menu != 'other' }}">
       <a href="/articles/"></a>
     </core-item>
     <core-submenu label="Resources"  hidden?="{{menu && menu != 'other'}}" src="/images/logos/logo_colour_24x24_nocircles.svg">
