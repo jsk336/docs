@@ -128,6 +128,7 @@ title: Welcome to Antha
       <h1>Keep in Touch</h1>
       <p>Antha is under rapid and open development. You can subscribe to low volume updates as it progresses, or you can dive in to help build Antha faster</p>
 	  <div layout horizontal justified>
+		<smart-flow width="400">
 		  <div></div>
 		  <div>
 		  	<paper-button raised>
@@ -144,6 +145,7 @@ title: Welcome to Antha
       	  		</a>
         	</paper-button>
 		  </div>
+		</smart-flow>
 		  <div></div>
     </summary>
   </div>
