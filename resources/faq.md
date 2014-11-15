@@ -14,16 +14,13 @@ title: FAQ
 
 ## {{site.project_title}}
 
-### Why should I care about this project? {#why}
+### Why is this project important? {#why}
 
 {{site.project_title}} is the first high level language designed to enable robust, reproducible and composible work in the biosciences. {{site.project_title}} is designed to take away much of the detail of experimental planning, allowing biologists to focus on what they want to do, not how to do it.  This allows researchers to think about the biology of their system, and successfully carry out ever more complex and illuminating experiments.
 
 ### Why do we need a high level language for doing biology? {#why}
 
 A high level language enables ease of design, better reproducibility and scalability. Lack of reproducibility is still a major barrier to progress in the biosciences (an [article](http://www.nature.com/nature/journal/v483/n7391/full/483531a.html) from Amgen reports that they could reproduce findings in only 11% of 53 published papers). 
-
-### Why is this only being done now? 
-The will to improve reproducibility is not new. In recent years efforts have been made to abstract the layers of biological complexity and to standardize by breaking down biological components into repositories of well-characterised standardized parts which can be combined to form more complex devices. The biobrick registry at iGEM is a good example of this. This is a move in the right direction but the problem is far from fully solved since biology is not that simple and often it's not possible to standardise parts.
 
 ### Why is this only being done now?
 The will to improve reproducibility is not new. In recent years efforts have been made to abstract the layers of biological complexity and to standardize by breaking down biological components into repositories of well-characterised standardized parts which can be combined to form more complex devices. The biobrick registry at iGEM is a good example of this. This is a move in the right direction but the problem is far from fully solved since biology is not that simple and often it's not straightforward standardise parts.

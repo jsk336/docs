@@ -32,5 +32,5 @@ Concurrency + communication = more efficient processes.
 Communication enables the ability to coordinate those independent pieces for optimal efficiency, not necessarily doing things at the same time. This concept is not [new](https://assets.cs.ncl.ac.uk/seminars/224.pdf) but Google’s Go language has this capacity built-in making building qnd debugging concurrent workflows easier.
 
 ## Concurrency with Antha
-Antha will bring the concept of concurrency into managing physical lab operations and processes with limited resources as well as computational tasks such as processing sequencing data or metabolite profiling. 
+Antha will bring the concept of concurrency into managing physical lab operations and processes with limited resources as well as computational tasks such as processing DNA sequencing data or metabolite profiling. 
 In the computational sphere this can mean large operations are performed in seconds rather than minutes; in the physical world of carrying out lab work, where timescales are longer, the time saving could be substantial; especially as more ambitious experimental plans are enabled.

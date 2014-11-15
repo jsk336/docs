@@ -52,7 +52,7 @@ Experiments can then be generated from bundling workflows together. Potentially 
 
 ## Quality built-in ##
 
-Antha is an end-to-end fully integrated language with quality control built in to its DNA. As well as a language for experimental design, execution and data processing, it’s a LIMs system, data-management system and QA system, yet simple and fun to use. The language is designed to effortlessly incorporate quality standards such as quality by design and GMP level quality standards without the overhead for the user. This means enhanced traceability, reproducibility and simplicity for the user.
+Antha is an end-to-end fully integrated language with quality control built in to its DNA. As well as a language for experimental design, execution and data processing, it’s a LIMs system, data-management system and QA system, yet simple and fun to use. The language is designed to support effortless incorporation of quality standards such as [quality by design](/docs/concepts/characterization.html) and GLP level quality standards without the overhead for the user. This means enhanced traceability, reproducibility and simplicity for the user.
 
 There are many factors which can affect an experiment which typically wouldn't be recorded. With the example of a simple step such as recovering a frozen cell stock and incubating there are many factors which might effect the reproducibility and quality of the procedure which could have a knock on effect in subsequent processes. Normally it would be very laborious to capture all of these variables but Antha aims to capture as many of them as possible automatically. 
 <img src="/images/Antha_seedelement_sourcesofvariability.png" alt="sources of variability" width="500" height="500">
