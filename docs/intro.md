@@ -36,7 +36,7 @@ Driven by our in-house needs and what we've learnt through statistical experimen
 
 ## Redesigning the language of biology ##
 
-Antha is the first [high-level programming language](https://en.wikipedia.org/wiki/High-level_programming_language) for biology; designed to make simple, reproducible and scalable workflows by stacking smart and reusable elements.
+Antha is a first-generation [high-level programming language](https://en.wikipedia.org/wiki/High-level_programming_language) for biology; designed to make simple, reproducible and scalable workflows by stacking smart and reusable elements.
 
 An element can be anything from genetic elements (such as a [promoter](https://en.wikipedia.org/wiki/Promoter_%28genetics%29), [gene](https://en.wikipedia.org/wiki/Gene), [transcription factor](https://en.wikipedia.org/wiki/Transcription_factor) or the particular strain of yeast or bacteria used as host) to experimental procedures such as [DNA assembly](http://parts.igem.org/About_Assembly), incubation, [protein expression](https://en.wikipedia.org/wiki/Protein_expression_%28biotechnology%29) or [enzyme assays](https://en.wikipedia.org/wiki/Enzyme_assay). 
 

@@ -18,7 +18,7 @@ title: Welcome to Antha
       </paper-button>
 
       <paper-button raised class="github" unresolved>
-      	<a href="https://github.com/Synthace/antha">
+      	<a href="https://github.com/antha-lang/antha-lang.github.io">
           <core-icon icon="social:post-github"></core-icon>  View on Github 
       	</a>
       </paper-button>
