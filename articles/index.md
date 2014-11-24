@@ -41,5 +41,5 @@ add_permalinks: false
 {% endfor %}
 
 <div style="margin-top:5em;">
-_Have an idea for an article? [Suggest it](https://github.com/Synthace/docs/issues/new)!_
+_Have an idea for an article? [Suggest it](https://github.com/antha-lang/docs/issues/new)!_
 </div>
