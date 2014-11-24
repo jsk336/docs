@@ -1,4 +1,4 @@
-Polymer docs are mostly in Markdown with some HTML. [Jekyll][jekyll] is used to generate the static HTML for the site. The output is generated into a folder called `_site` and served from Google App Engine.
+Antha docs are mostly in Markdown with some HTML. [Jekyll][jekyll] is used to generate the static HTML for the site. The output is generated into a folder called `_site` and served from Github Pages.
 
 ## Prereqs and installation requirements
 
@@ -13,7 +13,7 @@ We use Jekyll 2.4 and [Grunt][grunt] to generate the documentation, and compass 
 
 Checkout this repo:
 
-    git clone https://github.com/Synthace/docs.git --recursive
+    git clone https://github.com/antha-lang/docs.git --recursive
 
 Run the setup script:
 
@@ -67,3 +67,4 @@ broken after Polymer and the elements have been updated.
 
 [jekyll]: http://jekyllrb.com/
 [grunt]: http://gruntjs.com/
+[polymer]: http://polymer-project.org/
